@@ -1,0 +1,2064 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Lore\n"
+"POT-Creation-Date: 2017-01-12 15:37+0100\n"
+"PO-Revision-Date: 2016-04-14 13:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:12 ../inc/kirki-config.php:1786
+msgid "The page you are looking for is no longer available or has been moved"
+msgstr ""
+
+#: ../archive-lsvr_lore_faq.php:41
+msgid "Permalink"
+msgstr ""
+
+#: ../archive-lsvr_lore_faq.php:59
+msgid "There are no FAQ posts"
+msgstr ""
+
+#: ../author.php:46 ../index.php:83 ../single-lsvr_lore_kb.php:72
+#: ../single.php:26
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: ../author.php:50 ../index.php:87
+msgid "Read More"
+msgstr ""
+
+#: ../author.php:68 ../index.php:105 ../single-lsvr_lore_faq.php:74
+msgid "Sorry, no posts matched your criteria"
+msgstr ""
+
+#: ../comments.php:5
+#, php-format
+msgid "%s Comment"
+msgstr ""
+
+#: ../comments.php:11
+msgid "Reply to comment"
+msgstr ""
+
+#: ../comments.php:26
+msgid "Comments"
+msgstr ""
+
+#: ../comments.php:27
+msgid "There are no comments yet"
+msgstr ""
+
+#: ../comments.php:35
+msgid "Leave a comment"
+msgstr ""
+
+#: ../components/header-search-form.php:11 ../inc/kirki-config.php:627
+msgid "Search the Knowledge Base"
+msgstr ""
+
+#: ../components/header-search-form.php:13 ../searchform.php:8
+msgid "Search"
+msgstr ""
+
+#: ../components/header-search-form.php:33
+msgid "Search in:"
+msgstr ""
+
+#: ../components/header-search-form.php:36
+msgid "all"
+msgstr ""
+
+#: ../components/header-search-form.php:41
+msgid "knowledge base"
+msgstr ""
+
+#: ../components/header-search-form.php:47 ../inc/kirki-config.php:1266
+#: ../inc/kirki-config.php:1287 ../inc/lsvr-lore-functions.php:249
+#: ../inc/lsvr-lore-functions.php:581
+msgid "FAQ"
+msgstr ""
+
+#: ../components/header-search-form.php:52
+msgid "post"
+msgstr ""
+
+#: ../components/header-search-form.php:56
+msgid "page"
+msgstr ""
+
+#: ../components/header-search-form.php:61
+msgid "forum"
+msgstr ""
+
+#: ../components/header-search-form.php:64
+msgid "topic"
+msgstr ""
+
+#: ../components/header-search-form.php:74
+msgid "Close Search"
+msgstr ""
+
+#: ../components/header-search-form.php:91
+msgid "Suggested Search:"
+msgstr ""
+
+#: ../components/kb-archive-article-view.php:19
+#: ../taxonomy-lsvr_lore_kb_cat.php:79 ../taxonomy-lsvr_lore_kb_tag.php:18
+#, php-format
+msgid "%s article"
+msgstr ""
+
+#: ../components/kb-archive-article-view.php:65
+#: ../components/kb-archive-category-view.php:151
+msgid "There are currently no articles in Knowledge Base"
+msgstr ""
+
+#: ../components/kb-archive-category-view.php:66
+#, php-format
+msgid "%s Subcategory"
+msgstr ""
+
+#: ../components/kb-archive-category-view.php:82
+#: ../components/kb-archive-category-view.php:118
+#: ../taxonomy-lsvr_lore_kb_cat.php:52
+#, php-format
+msgid "%s Article"
+msgstr ""
+
+#: ../components/kb-archive-category-view.php:135
+msgid "See All"
+msgstr ""
+
+#: ../footer.php:62
+msgid "Back to Top"
+msgstr ""
+
+#: ../functions.php:209
+msgid "Close (Esc)"
+msgstr ""
+
+#: ../functions.php:210
+msgid "Loading..."
+msgstr ""
+
+#: ../functions.php:211
+msgid "Previous (Left arrow key)"
+msgstr ""
+
+#: ../functions.php:212
+msgid "Next (Right arrow key)"
+msgstr ""
+
+#: ../functions.php:213
+msgid "The image could not be loaded."
+msgstr ""
+
+#: ../functions.php:214
+msgid "The content could not be loaded."
+msgstr ""
+
+#: ../functions.php:256
+msgid "Header Menu"
+msgstr ""
+
+#: ../functions.php:261
+msgid "Footer Menu"
+msgstr ""
+
+#: ../functions.php:266 ../functions.php:289
+msgid "Content Grid"
+msgstr ""
+
+#: ../functions.php:277 ../inc/metaboxes.php:33
+msgid "Default Sidebar"
+msgstr ""
+
+#: ../functions.php:279
+msgid ""
+"This sidebar is used for standard posts pages (post archive, post detail, "
+"etc.). You can change its position or disable it under Appearance / "
+"Customize / Standard Posts"
+msgstr ""
+
+#: ../functions.php:291
+msgid ""
+"This widget area can be used on a page which has its page template set to "
+"Default Front Page. Content Grid Source option under Appearance / "
+"Customize / Default Front Page Settings has to be set to Widgets. You can "
+"also insert this sidebar to any page via Content Grid shortcode "
+"[lore_content_grid]"
+msgstr ""
+
+#: ../functions.php:303 ../inc/metaboxes.php:35
+#, php-format
+msgid "Custom Sidebar %d"
+msgstr ""
+
+#: ../functions.php:305
+#, php-format
+msgid ""
+"To assign this sidebar to a page, set page template to \"Sidebar on the Left"
+"\" or \"Sidebar on the Right\" and then choose the sidebar under Sidebar "
+"Settings of that page. Also, you can insert this sidebar to any page using "
+"[lore_content_grid sidebar=\"lsvr-lore-custom-sidebar-%d\"] shortcode. "
+"Number of available Custom Sidebars can be set under Appearance / "
+"Customize / Misc Settings with Number of Custom Sidebars option"
+msgstr ""
+
+#: ../functions.php:316
+msgid "Knowledge Base Sidebar"
+msgstr ""
+
+#: ../functions.php:318
+msgid ""
+"Widget area located on the left or right side of all Knowledge Base pages "
+"except the default archive. You can change its side or disable it under "
+"Appearance / Customize / Knowledge Base with Sidebar Position option"
+msgstr ""
+
+#: ../functions.php:328
+msgid "FAQ Sidebar"
+msgstr ""
+
+#: ../functions.php:330
+msgid ""
+"Widget area located on the left or right side of all FAQ pages. You can "
+"change its side or disable it under Appearance / Customize / FAQ with "
+"Sidebar Position option"
+msgstr ""
+
+#: ../functions.php:342
+msgid "Footer Widgets"
+msgstr ""
+
+#: ../functions.php:344
+msgid ""
+"Widget area located in the footer of the site. You can change number of "
+"columns under Appearance / Customize / Footer Settings with Footer Widgets "
+"Columns option"
+msgstr ""
+
+#: ../functions.php:354
+msgid "Search Results Sidebar"
+msgstr ""
+
+#: ../functions.php:356
+msgid ""
+"Widget area located on the left or right side of Search Results page. You "
+"can change its position or disable it under Appearance / Customize / Misc "
+"Settings with Search Results Sidebar Position option"
+msgstr ""
+
+#: ../functions.php:418
+msgid "You do not have permission to search"
+msgstr ""
+
+#: ../functions.php:448
+#, php-format
+msgid "Reply To: %s"
+msgstr ""
+
+#: ../functions.php:504
+msgid "Show all results"
+msgstr ""
+
+#: ../functions.php:521 ../search.php:61
+msgid "Sorry, no results were found"
+msgstr ""
+
+#: ../functions.php:565
+msgid "You do not have permission to rate"
+msgstr ""
+
+#: ../functions.php:642 ../single-lsvr_lore_kb.php:142
+#, php-format
+msgid "%s like"
+msgstr ""
+
+#: ../functions.php:643 ../single-lsvr_lore_kb.php:147
+#, php-format
+msgid "%s dislike"
+msgstr ""
+
+#: ../functions.php:865 ../inc/kirki-config.php:1711
+msgid "Title"
+msgstr ""
+
+#: ../functions.php:871
+msgid "Icon (for example \"fa fa-file-o\")"
+msgstr ""
+
+#: ../functions.php:876
+msgid "Add Attachments"
+msgstr ""
+
+#: ../functions.php:881
+msgid "Hold the CTRL / CMD key to select multiple files at once"
+msgstr ""
+
+#: ../functions.php:883
+msgid "Attach Files"
+msgstr ""
+
+#: ../functions.php:884
+msgid "Attach"
+msgstr ""
+
+#: ../header.php:61
+msgid "Choose language:"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:393
+#: ../inc/class-tgm-plugin-activation.php:912
+#: ../inc/class-tgm-plugin-activation.php:2618
+#: ../inc/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:394
+#: ../inc/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:395
+#: ../inc/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1019
+#: ../inc/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3594
+#: ../inc/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3594
+#: ../inc/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/kirki-config.php:30
+msgid "Default Front Page Settings"
+msgstr ""
+
+#: ../inc/kirki-config.php:39 ../inc/kirki-config.php:776
+#: ../inc/kirki-config.php:1529
+msgid "Info"
+msgstr ""
+
+#: ../inc/kirki-config.php:40
+msgid ""
+"Following settings apply only to a page which has its Page Template set to "
+"Default Front Page. Also, do not forget to choose this page as your front "
+"page under Settings / Reading."
+msgstr ""
+
+#: ../inc/kirki-config.php:49
+msgid "Enable Content Grid"
+msgstr ""
+
+#: ../inc/kirki-config.php:50
+msgid ""
+"Content grid can list your Knowledge Base categories, custom menu items or "
+"widgets"
+msgstr ""
+
+#: ../inc/kirki-config.php:60
+msgid "Grid Columns"
+msgstr ""
+
+#: ../inc/kirki-config.php:61
+msgid "Number of columns for content grid"
+msgstr ""
+
+#: ../inc/kirki-config.php:83 ../inc/kirki-config.php:956
+msgid "Enable Masonry"
+msgstr ""
+
+#: ../inc/kirki-config.php:84
+msgid "Enable Masonry layout for content grid"
+msgstr ""
+
+#: ../inc/kirki-config.php:101
+msgid "Grid Title"
+msgstr ""
+
+#: ../inc/kirki-config.php:102
+msgid "Title which will be displayed above the grid"
+msgstr ""
+
+#: ../inc/kirki-config.php:103 ../page-templates/default-front-page.php:64
+msgid "Selected topics"
+msgstr ""
+
+#: ../inc/kirki-config.php:119
+msgid "Grid Button Label"
+msgstr ""
+
+#: ../inc/kirki-config.php:120
+msgid "Label of button which will be displayed above the grid"
+msgstr ""
+
+#: ../inc/kirki-config.php:121 ../page-templates/default-front-page.php:65
+#: ../page-templates/default-front-page.php:232
+msgid "Go To Knowledge Base"
+msgstr ""
+
+#: ../inc/kirki-config.php:137
+msgid "Grid Button Link"
+msgstr ""
+
+#: ../inc/kirki-config.php:138
+msgid "Link of button which will be displayed above the grid"
+msgstr ""
+
+#: ../inc/kirki-config.php:155
+msgid "Content Grid Source"
+msgstr ""
+
+#: ../inc/kirki-config.php:156
+msgid "Source of content for content grid element."
+msgstr ""
+
+#: ../inc/kirki-config.php:157
+msgid ""
+"KNOWLEDGE BASE CATEGORIES: make sure to create some Knowledge Base "
+"categories with articles for this option to work. Articles order is "
+"inherited from global Knowledge Base articles order settings under "
+"Appeareance / Customize / Knowledge Base"
+msgstr ""
+
+#: ../inc/kirki-config.php:158
+msgid ""
+"CUSTOM MENU: create your custom menu under Appearance / Menus and set its "
+"location to Content Grid. You can use Description field of top level menu "
+"items to add an icon (for example \"loreico loreico-heart\")"
+msgstr ""
+
+#: ../inc/kirki-config.php:159
+msgid ""
+"WIDGETS: if you select this option, you can populate content grid with "
+"widgets under Appearance / Widgets. Just drag and drop any widget into "
+"Content Grid sidebar"
+msgstr ""
+
+#: ../inc/kirki-config.php:161
+msgid "Knowledge Base Categories"
+msgstr ""
+
+#: ../inc/kirki-config.php:162
+msgid "Custom Menu"
+msgstr ""
+
+#: ../inc/kirki-config.php:163
+msgid "Widgets"
+msgstr ""
+
+#: ../inc/kirki-config.php:181
+msgid "Knowledge Base Categories Limit"
+msgstr ""
+
+#: ../inc/kirki-config.php:182
+msgid ""
+"If grid content is set to Knowledge Base Categories, set how many categories "
+"will be displayed in grid. Set to 0 to show all. Only top categories will be "
+"shown"
+msgstr ""
+
+#: ../inc/kirki-config.php:209
+msgid "Articles Per Category"
+msgstr ""
+
+#: ../inc/kirki-config.php:210
+msgid ""
+"How many articles per category to show. Set to 0 to show all. Only direct "
+"child articles will be shown"
+msgstr ""
+
+#: ../inc/kirki-config.php:246
+msgid "Enable CTA Block"
+msgstr ""
+
+#: ../inc/kirki-config.php:247
+msgid "Your grid can contain a small CTA block"
+msgstr ""
+
+#: ../inc/kirki-config.php:257
+msgid "CTA Block Position"
+msgstr ""
+
+#: ../inc/kirki-config.php:258
+msgid ""
+"You can display CTA as the first or as the last item of grid. Please note "
+"that if you set content grid layout to masonry, the CTA may not appear in "
+"the first/last position as Masonry script uses its own algorithm to "
+"determine the optimal position for each block"
+msgstr ""
+
+#: ../inc/kirki-config.php:260
+msgid "First"
+msgstr ""
+
+#: ../inc/kirki-config.php:261
+msgid "Last"
+msgstr ""
+
+#: ../inc/kirki-config.php:279
+msgid "CTA Block Title"
+msgstr ""
+
+#: ../inc/kirki-config.php:280
+msgid "Title of the CTA block"
+msgstr ""
+
+#: ../inc/kirki-config.php:281 ../page-templates/default-front-page.php:31
+#: ../page-templates/default-front-page.php:33
+msgid "Hello World!"
+msgstr ""
+
+#: ../inc/kirki-config.php:297
+msgid "CTA Block Text"
+msgstr ""
+
+#: ../inc/kirki-config.php:298
+msgid "Text content of the CTA block"
+msgstr ""
+
+#: ../inc/kirki-config.php:299 ../page-templates/default-front-page.php:35
+#: ../page-templates/default-front-page.php:38
+msgid "Lorem ipsum"
+msgstr ""
+
+#: ../inc/kirki-config.php:315
+msgid "CTA Block Button Label"
+msgstr ""
+
+#: ../inc/kirki-config.php:316
+msgid "Label of CTA button displayed under text"
+msgstr ""
+
+#: ../inc/kirki-config.php:317 ../page-templates/default-front-page.php:41
+#: ../page-templates/default-front-page.php:45
+msgid "Learn More"
+msgstr ""
+
+#: ../inc/kirki-config.php:333
+msgid "CTA Block Button Link"
+msgstr ""
+
+#: ../inc/kirki-config.php:334
+msgid ""
+"Link of CTA button. Add an absolute URL please (with http:// or https:// "
+"respectively)"
+msgstr ""
+
+#: ../inc/kirki-config.php:335
+msgid "#"
+msgstr ""
+
+#: ../inc/kirki-config.php:360
+msgid "Enable Blog List"
+msgstr ""
+
+#: ../inc/kirki-config.php:361
+msgid "List latest blog posts"
+msgstr ""
+
+#: ../inc/kirki-config.php:371
+msgid "Blog List Title"
+msgstr ""
+
+#: ../inc/kirki-config.php:372
+msgid "Title which will be displayed above blog list"
+msgstr ""
+
+#: ../inc/kirki-config.php:373 ../page-templates/default-front-page.php:251
+#: ../page-templates/default-front-page.php:253
+msgid "Recent Blog Posts"
+msgstr ""
+
+#: ../inc/kirki-config.php:389
+msgid "Blog List Button Label"
+msgstr ""
+
+#: ../inc/kirki-config.php:390
+msgid ""
+"Label of button which links to blog archive page. Leave blank to hide button"
+msgstr ""
+
+#: ../inc/kirki-config.php:391 ../page-templates/default-front-page.php:290
+#: ../page-templates/default-front-page.php:293
+msgid "More Posts"
+msgstr ""
+
+#: ../inc/kirki-config.php:407
+msgid "Post Count"
+msgstr ""
+
+#: ../inc/kirki-config.php:408
+msgid "How many posts to show. Set to 0 to show all posts"
+msgstr ""
+
+#: ../inc/kirki-config.php:430
+msgid "Columns Count"
+msgstr ""
+
+#: ../inc/kirki-config.php:431
+msgid "How many posts per row to show"
+msgstr ""
+
+#: ../inc/kirki-config.php:453
+msgid "Header Settings"
+msgstr ""
+
+#: ../inc/kirki-config.php:462
+msgid "Max Logo Width"
+msgstr ""
+
+#: ../inc/kirki-config.php:463
+#, php-format
+msgid ""
+"Limit the width of the header logo image (in pixels). Please note that max "
+"width of the logo is limited to approximately 30% of header width. Set to 0 "
+"to disable"
+msgstr ""
+
+#: ../inc/kirki-config.php:478 ../inc/kirki-config.php:786
+#: ../inc/kirki-config.php:899 ../inc/kirki-config.php:1329
+msgid "Background Image"
+msgstr ""
+
+#: ../inc/kirki-config.php:479
+msgid ""
+"Optimal resolution is about 2000x1000px. You can override this background "
+"for regular pages using their Featured Image"
+msgstr ""
+
+#: ../inc/kirki-config.php:488
+msgid "Background Alignment"
+msgstr ""
+
+#: ../inc/kirki-config.php:489
+msgid "Vertical alignment of the background image"
+msgstr ""
+
+#: ../inc/kirki-config.php:491
+msgid "Top"
+msgstr ""
+
+#: ../inc/kirki-config.php:492
+msgid "Center"
+msgstr ""
+
+#: ../inc/kirki-config.php:493
+msgid "Bottom"
+msgstr ""
+
+#: ../inc/kirki-config.php:505
+msgid "Background Overlay"
+msgstr ""
+
+#: ../inc/kirki-config.php:506
+msgid ""
+"Opacity of dark layer displayed over background image for better "
+"readability. Set to 0 to completely disable it"
+msgstr ""
+
+#: ../inc/kirki-config.php:531
+msgid "Header Search"
+msgstr ""
+
+#: ../inc/kirki-config.php:532
+msgid "Show search input in Header"
+msgstr ""
+
+#: ../inc/kirki-config.php:542
+msgid "Large Header Search"
+msgstr ""
+
+#: ../inc/kirki-config.php:543
+msgid ""
+"Choose where to display large version of header search. The compact version "
+"(in the form of header menu icon) will be displayed on pages where this "
+"large version is disabled"
+msgstr ""
+
+#: ../inc/kirki-config.php:545
+msgid "Show Everywhere"
+msgstr ""
+
+#: ../inc/kirki-config.php:546
+msgid "Knowledge Base and Front Page Only"
+msgstr ""
+
+#: ../inc/kirki-config.php:547
+msgid "Knowledge Base Only"
+msgstr ""
+
+#: ../inc/kirki-config.php:548
+msgid "Front Page Only"
+msgstr ""
+
+#: ../inc/kirki-config.php:549
+msgid "Disable"
+msgstr ""
+
+#: ../inc/kirki-config.php:567
+msgid "Ajax Search"
+msgstr ""
+
+#: ../inc/kirki-config.php:568
+msgid "Return search results without refreshing the site"
+msgstr ""
+
+#: ../inc/kirki-config.php:585
+msgid "Search Filter"
+msgstr ""
+
+#: ../inc/kirki-config.php:586
+msgid "Show search filter after clicking on search input"
+msgstr ""
+
+#: ../inc/kirki-config.php:603
+msgid "Number of Search Results"
+msgstr ""
+
+#: ../inc/kirki-config.php:604
+msgid "Maximum number of search results to display in ajax search"
+msgstr ""
+
+#: ../inc/kirki-config.php:626
+msgid "Search Input Placeholder"
+msgstr ""
+
+#: ../inc/kirki-config.php:643
+msgid "Suggested Keywords"
+msgstr ""
+
+#: ../inc/kirki-config.php:644
+msgid ""
+"List of suggested keywords separated by comma. For example: \"installation, "
+"demo import, translation\" (without quotes). Leave blank to hide"
+msgstr ""
+
+#: ../inc/kirki-config.php:669
+msgid "Fixed Navbar"
+msgstr ""
+
+#: ../inc/kirki-config.php:670
+msgid "Navbar will stick to the top of the page after scrolling down"
+msgstr ""
+
+#: ../inc/kirki-config.php:684
+msgid "Header Content Offset"
+msgstr ""
+
+#: ../inc/kirki-config.php:685
+msgid ""
+"White space at the top of the Header which prevents Large Header Search "
+"being overlapped by Navbar. This value should be slighty higher than height "
+"of your Navbar"
+msgstr ""
+
+#: ../inc/kirki-config.php:707
+msgid "Footer Settings"
+msgstr ""
+
+#: ../inc/kirki-config.php:716
+msgid "Footer Widgets Columns"
+msgstr ""
+
+#: ../inc/kirki-config.php:717
+msgid ""
+"Set number of widgets per row for Footer Widgets area. Widgets can be added "
+"under Appearance / Widgets"
+msgstr ""
+
+#: ../inc/kirki-config.php:733
+msgid "Social Icons"
+msgstr ""
+
+#: ../inc/kirki-config.php:734
+msgid ""
+"Show social icons in footer. Social icons can be defined under Social Link "
+"tab in Customizer"
+msgstr ""
+
+#: ../inc/kirki-config.php:744
+msgid "Footer Text"
+msgstr ""
+
+#: ../inc/kirki-config.php:745
+msgid "Ideal for copyright notice"
+msgstr ""
+
+#: ../inc/kirki-config.php:756
+msgid "Scroll To Top Button"
+msgstr ""
+
+#: ../inc/kirki-config.php:757
+msgid ""
+"Show \"scroll to top\" button which will scroll the page to the very top "
+"after clicking"
+msgstr ""
+
+#: ../inc/kirki-config.php:767
+msgid "Standard Posts (Blog)"
+msgstr ""
+
+#: ../inc/kirki-config.php:777
+msgid "Do not forget to set your Posts page under Settings / Reading"
+msgstr ""
+
+#: ../inc/kirki-config.php:787
+msgid ""
+"Header background image for all standard post pages (post list, post detail, "
+"category view etc.). Optimal resolution is about 2000x1000px"
+msgstr ""
+
+#: ../inc/kirki-config.php:796 ../inc/kirki-config.php:974
+#: ../inc/kirki-config.php:1348
+msgid "Sidebar Position"
+msgstr ""
+
+#: ../inc/kirki-config.php:797
+msgid "Position of the sidebar on all standard post pages"
+msgstr ""
+
+#: ../inc/kirki-config.php:799 ../inc/kirki-config.php:977
+#: ../inc/kirki-config.php:1351 ../inc/kirki-config.php:1808
+msgid "Left"
+msgstr ""
+
+#: ../inc/kirki-config.php:800 ../inc/kirki-config.php:978
+#: ../inc/kirki-config.php:1352 ../inc/kirki-config.php:1809
+msgid "Right"
+msgstr ""
+
+#: ../inc/kirki-config.php:801 ../inc/kirki-config.php:979
+#: ../inc/kirki-config.php:1353 ../inc/kirki-config.php:1810
+msgid "Disable Sidebar"
+msgstr ""
+
+#: ../inc/kirki-config.php:812
+msgid "Show Author Bio on Post Detail"
+msgstr ""
+
+#: ../inc/kirki-config.php:813
+msgid "You can edit author bio under Users"
+msgstr ""
+
+#: ../inc/kirki-config.php:823
+msgid "Show Post Navigation"
+msgstr ""
+
+#: ../inc/kirki-config.php:824
+msgid "Show links to previous and next post in post detail"
+msgstr ""
+
+#: ../inc/kirki-config.php:836 ../inc/kirki-config.php:857
+#: ../inc/lsvr-lore-functions.php:248 ../inc/lsvr-lore-functions.php:580
+msgid "Knowledge Base"
+msgstr ""
+
+#: ../inc/kirki-config.php:845
+msgid "Your current Knowledge Base URL"
+msgstr ""
+
+#: ../inc/kirki-config.php:846
+msgid ""
+"IMPORTANT: After making any changes in Knowledge Base URL Slug, Knowledge "
+"Base Category URL Slug and Knowledge Base Tag URL Slug settings, please go "
+"to Settings / Permalinks and hit Save Changes"
+msgstr ""
+
+#: ../inc/kirki-config.php:855
+msgid "Knowledge Base Title"
+msgstr ""
+
+#: ../inc/kirki-config.php:856
+msgid "Title used for default Knowledge Base page, breadcrumbs etc."
+msgstr ""
+
+#: ../inc/kirki-config.php:866
+msgid "Knowledge Base URL Slug"
+msgstr ""
+
+#: ../inc/kirki-config.php:867
+msgid "Slug defines the URL of your default Knowledge Base page"
+msgstr ""
+
+#: ../inc/kirki-config.php:877
+msgid "Knowledge Base Category URL Slug"
+msgstr ""
+
+#: ../inc/kirki-config.php:878
+msgid ""
+"This Slug defines the URL of page which shows posts from certain Knowledge "
+"Base category"
+msgstr ""
+
+#: ../inc/kirki-config.php:888
+msgid "Knowledge Base Tag URL Slug"
+msgstr ""
+
+#: ../inc/kirki-config.php:889
+msgid ""
+"This Slug defines the URL of page which shows posts with certain Knowledge "
+"Base tag"
+msgstr ""
+
+#: ../inc/kirki-config.php:900
+msgid ""
+"Header background image for all Knowledge Base pages. Optimal resolution is "
+"about 2000x1000px"
+msgstr ""
+
+#: ../inc/kirki-config.php:918
+msgid "Archive Page Layout"
+msgstr ""
+
+#: ../inc/kirki-config.php:919
+msgid ""
+"Layout of the Knowledge Base archive page. If you choose \"Category View\", "
+"make sure to have your Knowledge Base articles assigned to categories for "
+"this layout to work"
+msgstr ""
+
+#: ../inc/kirki-config.php:921
+msgid "Article View"
+msgstr ""
+
+#: ../inc/kirki-config.php:922
+msgid "Category View"
+msgstr ""
+
+#: ../inc/kirki-config.php:933
+msgid "Category View Columns"
+msgstr ""
+
+#: ../inc/kirki-config.php:934
+msgid "Number of columns on Knowledge Base category view archive page"
+msgstr ""
+
+#: ../inc/kirki-config.php:957
+msgid "Enable Masonry layout for Knowledge Base category view archive page"
+msgstr ""
+
+#: ../inc/kirki-config.php:975
+msgid "Position of the sidebar on Knowledge Base pages"
+msgstr ""
+
+#: ../inc/kirki-config.php:990
+msgid "Articles Order"
+msgstr ""
+
+#: ../inc/kirki-config.php:991
+msgid ""
+"Articles order for all Knowledge Base pages and widgets. Leave it on "
+"\"Default\" if you want to use 3rd party plugin to set the order. On the "
+"other hand, if you want to use one of the other options, make sure to "
+"disable any other 3rd party plugin which can interfere with this "
+"functionality"
+msgstr ""
+
+#: ../inc/kirki-config.php:993 ../inc/kirki-config.php:1367
+msgid "Default"
+msgstr ""
+
+#: ../inc/kirki-config.php:994 ../inc/kirki-config.php:1368
+msgid "By Date (Newest First)"
+msgstr ""
+
+#: ../inc/kirki-config.php:995 ../inc/kirki-config.php:1369
+msgid "By Date (Oldest First)"
+msgstr ""
+
+#: ../inc/kirki-config.php:996 ../inc/kirki-config.php:1370
+msgid "By Title"
+msgstr ""
+
+#: ../inc/kirki-config.php:1007
+msgid "Articles Per Page"
+msgstr ""
+
+#: ../inc/kirki-config.php:1008
+msgid ""
+"Number of Knowledge Base articles per page on article view archive page, "
+"Category and Tag pages. Set to 0 to show all articles"
+msgstr ""
+
+#: ../inc/kirki-config.php:1023
+msgid "Category View Archive Page Articles Limit"
+msgstr ""
+
+#: ../inc/kirki-config.php:1024
+msgid ""
+"Number of articles per category on category view archive page. Set to 0 to "
+"show all articles"
+msgstr ""
+
+#: ../inc/kirki-config.php:1055
+msgid "Allow Article Rating"
+msgstr ""
+
+#: ../inc/kirki-config.php:1056
+msgid "Enable likes and dislikes on Knowledge Base articles"
+msgstr ""
+
+#: ../inc/kirki-config.php:1070
+msgid "Allow Dislikes"
+msgstr ""
+
+#: ../inc/kirki-config.php:1071
+msgid "If disabled, only likes will be displayed"
+msgstr ""
+
+#: ../inc/kirki-config.php:1092
+msgid "Rating Interval"
+msgstr ""
+
+#: ../inc/kirki-config.php:1093
+msgid "How often can a visitor rate single article. Once per:"
+msgstr ""
+
+#: ../inc/kirki-config.php:1095
+msgid "Hour"
+msgstr ""
+
+#: ../inc/kirki-config.php:1096
+msgid "Day"
+msgstr ""
+
+#: ../inc/kirki-config.php:1097
+msgid "Week"
+msgstr ""
+
+#: ../inc/kirki-config.php:1098
+msgid "Month"
+msgstr ""
+
+#: ../inc/kirki-config.php:1099
+msgid "Three Months"
+msgstr ""
+
+#: ../inc/kirki-config.php:1100
+msgid "Six Months"
+msgstr ""
+
+#: ../inc/kirki-config.php:1101
+msgid "Year"
+msgstr ""
+
+#: ../inc/kirki-config.php:1102
+msgid "10 Years"
+msgstr ""
+
+#: ../inc/kirki-config.php:1124
+msgid "Rating Style"
+msgstr ""
+
+#: ../inc/kirki-config.php:1125
+msgid ""
+"How to display rating values. Please note that even if you choose "
+"\"difference\", both values will be displayed on Knowledge Base article "
+"detail page"
+msgstr ""
+
+#: ../inc/kirki-config.php:1127
+msgid "Show difference between likes and dislikes"
+msgstr ""
+
+#: ../inc/kirki-config.php:1128
+msgid "Show both likes and dislikes"
+msgstr ""
+
+#: ../inc/kirki-config.php:1165
+msgid "Show Table of Contents"
+msgstr ""
+
+#: ../inc/kirki-config.php:1166
+msgid ""
+"Display table of contents on article detail. It consists of links to all "
+"headline elements of article (H1, H2, H3, etc.) with ID attribute. You have "
+"to edit the HTML code of the article to add those IDs. For example &lt;h2 id="
+"\"unique-id\"&gt;My headline&lt;/h2&gt;"
+msgstr ""
+
+#: ../inc/kirki-config.php:1176
+msgid "Table of Contents Title"
+msgstr ""
+
+#: ../inc/kirki-config.php:1177
+msgid "Leave blank to hide title"
+msgstr ""
+
+#: ../inc/kirki-config.php:1178 ../single-lsvr_lore_kb.php:32
+msgid "Contents"
+msgstr ""
+
+#: ../inc/kirki-config.php:1198
+msgid "Table of Contents Excluded IDs"
+msgstr ""
+
+#: ../inc/kirki-config.php:1199
+msgid "Elements with these IDs will be ignored. Separate with comma"
+msgstr ""
+
+#: ../inc/kirki-config.php:1215
+msgid "Show Last Update Date"
+msgstr ""
+
+#: ../inc/kirki-config.php:1216
+msgid ""
+"Show date of last modification of article on its detail page. The last "
+"modification date will be displayed only if it is different to publish date"
+msgstr ""
+
+#: ../inc/kirki-config.php:1230
+msgid "Show Related Articles"
+msgstr ""
+
+#: ../inc/kirki-config.php:1231
+msgid "Display random articles from the same category"
+msgstr ""
+
+#: ../inc/kirki-config.php:1241
+msgid "Number of Related Articles"
+msgstr ""
+
+#: ../inc/kirki-config.php:1242
+msgid "Set to \"0\" to display all related articles"
+msgstr ""
+
+#: ../inc/kirki-config.php:1275
+msgid "Your current FAQ URL"
+msgstr ""
+
+#: ../inc/kirki-config.php:1276
+msgid ""
+"IMPORTANT: After making any changes in FAQ URL Slug, FAQ Category URL Slug "
+"and FAQ Tag URL Slug settings, please go to Settings / Permalinks and hit "
+"Save Changes"
+msgstr ""
+
+#: ../inc/kirki-config.php:1285
+msgid "FAQ Title"
+msgstr ""
+
+#: ../inc/kirki-config.php:1286
+msgid "Title used for default FAQ page, breadcrumbs etc."
+msgstr ""
+
+#: ../inc/kirki-config.php:1296
+msgid "FAQ URL Slug"
+msgstr ""
+
+#: ../inc/kirki-config.php:1297
+msgid "Slug defines the URL of your default FAQ page"
+msgstr ""
+
+#: ../inc/kirki-config.php:1307
+msgid "FAQ Category URL Slug"
+msgstr ""
+
+#: ../inc/kirki-config.php:1308
+msgid ""
+"This Slug defines the URL of page which shows posts from certain FAQ category"
+msgstr ""
+
+#: ../inc/kirki-config.php:1318
+msgid "FAQ Tag URL Slug"
+msgstr ""
+
+#: ../inc/kirki-config.php:1319
+msgid ""
+"This Slug defines the URL of page which shows posts with certain FAQ tags"
+msgstr ""
+
+#: ../inc/kirki-config.php:1330
+msgid ""
+"Header background image for all FAQ pages. Optimal resolution is about "
+"2000x1000px"
+msgstr ""
+
+#: ../inc/kirki-config.php:1349
+msgid "Position of the sidebar on all FAQ pages"
+msgstr ""
+
+#: ../inc/kirki-config.php:1364
+msgid "FAQ Order"
+msgstr ""
+
+#: ../inc/kirki-config.php:1365
+msgid ""
+"Post order for all FAQ pages and widgets. Leave it on \"Default\" if you "
+"want to use 3rd party plugin to set the order. Otherwise, if you want to use "
+"one of the other options, make sure to disable any other 3rd party plugin "
+"which can interfere with this functionality"
+msgstr ""
+
+#: ../inc/kirki-config.php:1381
+msgid "FAQ Posts Per Page"
+msgstr ""
+
+#: ../inc/kirki-config.php:1382
+msgid ""
+"Number of FAQ posts per page on default FAQ page and FAQ Category page. Set "
+"to 0 to show all FAQ posts"
+msgstr ""
+
+#: ../inc/kirki-config.php:1397
+msgid "FAQ Default State"
+msgstr ""
+
+#: ../inc/kirki-config.php:1398
+msgid "Set default state of all FAQ posts"
+msgstr ""
+
+#: ../inc/kirki-config.php:1400
+msgid "Collapsed"
+msgstr ""
+
+#: ../inc/kirki-config.php:1401
+msgid "Expanded"
+msgstr ""
+
+#: ../inc/kirki-config.php:1412
+msgid "Show Permalink"
+msgstr ""
+
+#: ../inc/kirki-config.php:1413
+msgid "Show FAQ post permalink on default FAQ page and FAQ Category page"
+msgstr ""
+
+#: ../inc/kirki-config.php:1423
+msgid "Color Scheme"
+msgstr ""
+
+#: ../inc/kirki-config.php:1432
+msgid "Color Scheme Source"
+msgstr ""
+
+#: ../inc/kirki-config.php:1433
+msgid ""
+"You can choose a predefined color scheme, select an accent color or generate "
+"custom color scheme code (please read the documentation for more info). If "
+"you choose \"Load From Child Theme\" option, simply put your color scheme "
+"CSS into child theme style.css file"
+msgstr ""
+
+#: ../inc/kirki-config.php:1435
+msgid "Predefined Color Scheme"
+msgstr ""
+
+#: ../inc/kirki-config.php:1436
+msgid "Pick Colors"
+msgstr ""
+
+#: ../inc/kirki-config.php:1437
+msgid "Paste Generated CSS"
+msgstr ""
+
+#: ../inc/kirki-config.php:1438
+msgid "Load From Child Theme"
+msgstr ""
+
+#: ../inc/kirki-config.php:1449
+msgid "Choose Color Scheme"
+msgstr ""
+
+#: ../inc/kirki-config.php:1451
+msgid "Green"
+msgstr ""
+
+#: ../inc/kirki-config.php:1452
+msgid "Orange"
+msgstr ""
+
+#: ../inc/kirki-config.php:1453
+msgid "Cyan"
+msgstr ""
+
+#: ../inc/kirki-config.php:1454
+msgid "Yellow"
+msgstr ""
+
+#: ../inc/kirki-config.php:1472
+msgid "Pick Link Color"
+msgstr ""
+
+#: ../inc/kirki-config.php:1473
+msgid "Color of content links and few other elements"
+msgstr ""
+
+#: ../inc/kirki-config.php:1490
+msgid "Pick Accent Color"
+msgstr ""
+
+#: ../inc/kirki-config.php:1491
+msgid "Main color of the color scheme"
+msgstr ""
+
+#: ../inc/kirki-config.php:1508
+msgid "Generated CSS"
+msgstr ""
+
+#: ../inc/kirki-config.php:1509
+msgid ""
+"Paste your CSS here. Please refer to the documentation to learn how to "
+"generate CSS for custom color scheme"
+msgstr ""
+
+#: ../inc/kirki-config.php:1530
+msgid "Paste your custom scheme CSS into style.css file in child theme folder"
+msgstr ""
+
+#: ../inc/kirki-config.php:1546
+msgid "Typography"
+msgstr ""
+
+#: ../inc/kirki-config.php:1555
+msgid "Enable Google Fonts"
+msgstr ""
+
+#: ../inc/kirki-config.php:1556
+msgid ""
+"If you disable Google Fonts, default sans-serif font (Arial) will be used "
+"for all text"
+msgstr ""
+
+#: ../inc/kirki-config.php:1566
+msgid "Primary Font"
+msgstr ""
+
+#: ../inc/kirki-config.php:1567
+msgid ""
+"This font will be used for almost all text except some headlines and titles. "
+"Default primary font is Open Sans"
+msgstr ""
+
+#: ../inc/kirki-config.php:1605
+msgid "Secondary Font"
+msgstr ""
+
+#: ../inc/kirki-config.php:1606
+msgid ""
+"This font will be used for headlines. Default secondary font is Roboto Slab"
+msgstr ""
+
+#: ../inc/kirki-config.php:1644
+msgid "Base Font Size"
+msgstr ""
+
+#: ../inc/kirki-config.php:1645
+msgid ""
+"Font size of basic content text. All other font sizes will be also "
+"calculated from this value. Default font size is 16px"
+msgstr ""
+
+#: ../inc/kirki-config.php:1670
+msgid "Font Subsets"
+msgstr ""
+
+#: ../inc/kirki-config.php:1671
+msgid ""
+"Only the Latin subset is loaded by default. If your site is in any other "
+"language than English, you may need to load an additional font subset"
+msgstr ""
+
+#: ../inc/kirki-config.php:1673
+msgid "Latin Extended"
+msgstr ""
+
+#: ../inc/kirki-config.php:1674
+msgid "Greek"
+msgstr ""
+
+#: ../inc/kirki-config.php:1675
+msgid "Greek Extended"
+msgstr ""
+
+#: ../inc/kirki-config.php:1676
+msgid "Vietnamese"
+msgstr ""
+
+#: ../inc/kirki-config.php:1677
+msgid "Cyrillic"
+msgstr ""
+
+#: ../inc/kirki-config.php:1678
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: ../inc/kirki-config.php:1695 ../inc/kirki-config.php:1704
+msgid "Social Links"
+msgstr ""
+
+#: ../inc/kirki-config.php:1706
+msgid "Social Link"
+msgstr ""
+
+#: ../inc/kirki-config.php:1712
+msgid ""
+"This text will be displayed when you hover over the icon and will also be "
+"used as a link label if you will not define Icon in the field below"
+msgstr ""
+
+#: ../inc/kirki-config.php:1716
+msgid "Icon"
+msgstr ""
+
+#: ../inc/kirki-config.php:1717
+msgid ""
+"For example \"fa fa-twitter\". Please refer to the documentation to learn "
+"more about icons"
+msgstr ""
+
+#: ../inc/kirki-config.php:1721
+msgid "URL"
+msgstr ""
+
+#: ../inc/kirki-config.php:1722
+msgid ""
+"Full URL starting with http:// or https:// respectively. Icon will not be "
+"displayed without filling this field"
+msgstr ""
+
+#: ../inc/kirki-config.php:1765
+msgid "Open Social Links in New Tab"
+msgstr ""
+
+#: ../inc/kirki-config.php:1775
+msgid "Misc Settings"
+msgstr ""
+
+#: ../inc/kirki-config.php:1784
+msgid "Page 404 Text"
+msgstr ""
+
+#: ../inc/kirki-config.php:1785
+msgid ""
+"This page is displayed whenever someone visits a page that is not available "
+"on your site"
+msgstr ""
+
+#: ../inc/kirki-config.php:1805
+msgid "Search Results Sidebar Position"
+msgstr ""
+
+#: ../inc/kirki-config.php:1806
+msgid "Position of the sidebar on Search Results page"
+msgstr ""
+
+#: ../inc/kirki-config.php:1830
+msgid "Number of Custom Sidebars"
+msgstr ""
+
+#: ../inc/kirki-config.php:1831
+msgid ""
+"Custom Sidebar is a widgetized area, editable under Appearance / Widgets, "
+"which can be inserted into a page content via [lsvr_custom_sidebar sidebar="
+"\"1\"] shortcode (\"sidebar\" attribute specifies which Custom Sidebar "
+"should be inserted)"
+msgstr ""
+
+#: ../inc/kirki-config.php:1859
+msgid "Contact Form Page"
+msgstr ""
+
+#: ../inc/kirki-config.php:1860
+msgid ""
+"Select the page where you are using contact form (via Contact Form 7 "
+"plugin). All necessary CSS and JS files will be loaded only on this page "
+"(for better performance). If you are using contact form on more than one "
+"page, leave this field blank"
+msgstr ""
+
+#: ../inc/kirki-config.php:1878
+msgid "Use Default Lightbox"
+msgstr ""
+
+#: ../inc/kirki-config.php:1879
+msgid ""
+"To open an image in lightbox, give his parent link (A tag) class \"lightbox"
+"\". For example &lt;a href=\"big_image_url\" class=\"lightbox\"&gt;&lt;img "
+"src=\"image_url\"&gt;&lt;/a&gt;. Disable if you want to use 3rd party "
+"solution for lightboxes"
+msgstr ""
+
+#: ../inc/kirki-config.php:1898
+msgid "Load Bundled FontAwesome Icons"
+msgstr ""
+
+#: ../inc/kirki-config.php:1899
+msgid ""
+"This theme contains only a limited number of FontAwesome icons. You can "
+"download a 3rd party plugin from official WordPress plugin repository which "
+"contains full set. If you do so, use the following option to disable loading "
+"of bundled FontAwesome icons to save bandwith"
+msgstr ""
+
+#: ../inc/kirki-config.php:1918
+msgid "Responsive Embed Elements"
+msgstr ""
+
+#: ../inc/kirki-config.php:1919
+msgid ""
+"All &lt;embed&gt; elements in content area will become responsive. Disable "
+"if this feature collides with some 3rd party plugins"
+msgstr ""
+
+#: ../inc/kirki-config.php:1929
+msgid "Responsive Iframe Elements"
+msgstr ""
+
+#: ../inc/kirki-config.php:1930
+msgid ""
+"All &lt;iframe&gt; elements in content area will become responsive. Disable "
+"if this feature collides with some 3rd party plugins"
+msgstr ""
+
+#: ../inc/kirki-config.php:1940
+msgid "Iframe Elements Filter"
+msgstr ""
+
+#: ../inc/kirki-config.php:1941
+msgid ""
+"Apply responsive feature only on those iframes, whose \"src\" attribute "
+"contains one of these keywords (separated by comma). Leave blank to apply "
+"responsiveness to all iframe elements in main content area"
+msgstr ""
+
+#: ../inc/kirki-config.php:1967
+msgid "WPML Language Switcher"
+msgstr ""
+
+#: ../inc/kirki-config.php:1968
+msgid ""
+"Show link to other language versions in header. WPML plugin have to be "
+"installed and configured for this feature to work"
+msgstr ""
+
+#: ../inc/kirki-config.php:1978
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/kirki-config.php:1987
+msgid "CSS Code"
+msgstr ""
+
+#: ../inc/kirki-config.php:1988
+msgid ""
+"Use this field only for small or temporary CSS changes. Whenever possible, "
+"use style.css in Child Theme for adding your custom CSS"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:269 ../inc/lsvr-lore-functions.php:365
+msgid "News"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:274 ../inc/lsvr-lore-functions.php:372
+msgid "Page Not Found"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:279
+#, php-format
+msgid "Searching for %s"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:287 ../inc/lsvr-lore-functions.php:291
+#: ../inc/lsvr-lore-functions.php:295 ../inc/lsvr-lore-functions.php:390
+#: ../inc/lsvr-lore-functions.php:396 ../inc/lsvr-lore-functions.php:402
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:299
+msgid "Author Archive"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:378
+msgid "Search Results"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:590
+msgid "Home"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:821
+#, php-format
+msgid "%d likes, %d dislikes"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:826
+#, php-format
+msgid "%d likes"
+msgstr ""
+
+#: ../inc/lsvr-lore-functions.php:827
+#, php-format
+msgid "%d dislikes"
+msgstr ""
+
+#: ../inc/metaboxes.php:10
+msgid "Sidebar Settings"
+msgstr ""
+
+#: ../inc/metaboxes.php:27
+msgid ""
+"Here you can assign a sidebar to this page. The sidebar will be displayed "
+"only if this page uses \"Sidebar on the Left\" or \"Sidebar on the Right\" "
+"template. You can populate sidebars with widgets under Appearance / Widgets. "
+"Number of available custom sidebars can be changed under Appearance / "
+"Customize / Misc Settings with Number of Custom Sidebars option"
+msgstr ""
+
+#: ../inc/metaboxes.php:31
+msgid "Select Sidebar"
+msgstr ""
+
+#: ../inc/tgm-plugin-config.php:63
+msgid "Lore Theme Toolkit"
+msgstr ""
+
+#: ../inc/tgm-plugin-config.php:73
+msgid "Kirki"
+msgstr ""
+
+#: ../index.php:57 ../single.php:44
+#, php-format
+msgid "%d comment"
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:19
+msgid "You are already logged in."
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:19
+msgid "Logout?"
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:28
+msgid "Login"
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:32
+msgid "Forgot Password?"
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:34
+msgid "Reset Password"
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:42
+msgid "Register"
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:50
+msgid "bbPress plugin is required for this feature to work"
+msgstr ""
+
+#: ../page-templates/bbpress-login-register.php:58
+#: ../page-templates/default-front-page.php:310
+#: ../page-templates/fullwidth-without-title.php:18
+#: ../page-templates/fullwidth.php:21 ../page-templates/left-sidebar.php:29
+#: ../page-templates/right-sidebar.php:29
+#: ../page-templates/without-title.php:16 ../page.php:25
+msgid "Sorry, no pages matched your criteria"
+msgstr ""
+
+#: ../page-templates/default-front-page.php:157
+msgid "There are no Knowledge Base categories at this time"
+msgstr ""
+
+#: ../page-templates/default-front-page.php:193
+msgid ""
+"Please create your custom menu under Appearance / Menus and set its location "
+"to Content Grid"
+msgstr ""
+
+#: ../page-templates/default-front-page.php:220
+msgid ""
+"There are no widgets. Please populate Content Grid sidebar with widgets "
+"under Appearance / Widgets"
+msgstr ""
+
+#: ../page-templates/default-front-page.php:298
+msgid "There are currently no posts"
+msgstr ""
+
+#: ../search.php:16
+#, php-format
+msgid "%s Result"
+msgstr ""
+
+#: ../searchform.php:6
+msgid "Search the Site"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:45
+msgid "Attachments"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:74
+#, php-format
+msgid "Updated: %s"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:110
+msgid "Thanks for your rating!"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:120
+msgid "You have already rated this article"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:129
+msgid "An error occured, please try again later"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:138
+msgid "Was This Article Helpful?"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:194
+msgid "Related Articles"
+msgstr ""
+
+#: ../single-lsvr_lore_kb.php:220
+msgid "Sorry, no Knowledge Base article matched your criteria"
+msgstr ""
+
+#: ../single.php:67
+msgid "Post pages"
+msgstr ""
+
+#: ../single.php:100
+msgid "Author"
+msgstr ""
+
+#: ../single.php:131
+msgid "Previous"
+msgstr ""
+
+#: ../single.php:147
+msgid "Next"
+msgstr ""
+
+#: ../single.php:169
+msgid "Sorry, no post matched your criteria"
+msgstr ""
+
+#: ../taxonomy-lsvr_lore_kb_cat.php:125
+msgid "There are currently no articles in this category"
+msgstr ""
+
+#: ../taxonomy-lsvr_lore_kb_tag.php:64
+msgid "There are currently no articles with this tag"
+msgstr ""

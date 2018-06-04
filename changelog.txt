@@ -1,0 +1,69 @@
+v1.0.6
+
+Small JavaScript fixes
+
+Changed files: style.css, style.scss, library/js/scripts.js, library/js/scripts.min.js
+
+------------------------------
+
+v1.0.5
+
+Updated Lore Theme Toolkit to 1.0.2
+
+Updated documentation
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, components/header-search-form.php, inc/plugins/lsvr-toolkit-lore.zip, inc/tgm-plugin-config.php
+
+------------------------------
+
+v1.0.4
+
+Updated Lore Theme Toolkit to 1.0.1
+
+Updated documentation
+
+Changed the author archive page
+
+Fixed the header bug in Knowledge Base archive page when using the Article View
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, inc/plugins/lsvr-toolkit-lore.zip, inc/tgm-plugin-config.php, components/header-search-form.php, inc/lsvr-lore-functions.php
+
+New files: author.php
+
+------------------------------
+
+v1.0.3
+
+Changed the way how header logo dimensions work. "Logo Width" option under Customizer / Header Settings was renamed to "Max Logo Width". Now when you are uploading a new header logo, you can skip cropping process and limit the width via this option instead.
+
+Added option to disable header search filter
+
+Changed files: style.css, style.scss, functions.php, taxonomy-lsvr_lore_kb_cat.php, taxonomy-lsvr_lore_kb_tag.php, languages/lore.pot, inc/kirki-config.php, components/header-search-form.php
+
+------------------------------
+
+v1.0.2
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php
+
+------------------------------
+
+v1.0.1
+
+You can now change max width of the header logo under Customizer / Header Settings
+
+Fixed bug with menu closing button on mobile devices
+
+Changed files: style.css, style.scss, functions.php, inc/kirki-config.php
+
+------------------------------
+
+v1.0.0
+
+Initial themeForest release

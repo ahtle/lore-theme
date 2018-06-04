@@ -1,0 +1,1106 @@
+﻿/* -----------------------------------------------------------------------------
+
+	TABLE OF CONTENTS
+
+	1. General
+	2. Components
+	3. Widgets
+	4. Header
+	5. Core
+	6. Standard Posts
+	7. Knowledge Base
+	8. Faq
+	9. Footer
+	10. Other
+	11. Responsive
+
+----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+
+    1. GENERAL
+
+----------------------------------------------------------------------------- */
+
+	/* -------------------------------------------------------------------------
+		COLORS
+	-------------------------------------------------------------------------- */
+
+	// ACCENT
+	$accent: #40b1c2; // main accent color
+
+	// GRAY
+	$x-soft-gray: #eaedf3;
+	$soft-gray: #a6a9b7;
+	$gray: #575863;
+	$dark-gray: #232429;
+
+	// GENERAL
+	$body-font: #575863;
+	$body-link: #d2515a;
+	$info-font: #5987bb;
+	$info-bg: #dce8f6;
+	$warning-font: #f08c78;
+	$warning-bg: #fdeeeb;
+	$success-font: #74aa7b;
+	$success-bg: #eaf2eb;
+
+	// HEADER
+	$header-bg: #2d2e34;
+	$header-navbar-bg: transparent;
+	$header-navbar-font: #FFF;
+	$header-navbar-scrolled-bg: #2d2e34;
+	$header-submenu-bg: #34353c;
+	$header-submenu-font: #FFF;
+	$header-mobile-menu-bg: #2d2e34;
+	$header-mobile-menu-font: #FFF;
+
+	// CORE
+	$core-bg: #e5e9f0;
+	$page-wrapper-bg: #FFF;
+
+	// FOOTER
+	$footer-bg: #232429;
+	$footer-font: #8e909d;
+	$footer-link: $accent;
+	$footer-top-bg: #34353c;
+	$footer-menu-font: #d4dce8;
+	$footer-social-font: $accent;
+	$footer-widget-title: #d4dce8;
+	$footer-text-font: #71737d;
+	$footer-back-to-top-font: #9196a0;
+
+	/* -------------------------------------------------------------------------
+		MIXINS
+	-------------------------------------------------------------------------- */
+
+	// BOX SHADOW
+	@mixin box-shadow ( $params... ) {
+		-moz-box-shadow: $params;
+		-webkit-box-shadow: $params;
+		box-shadow: $params;
+	}
+
+	// HORIZONTAL GRADIENT
+	@mixin horizontal-gradient( $params... ) {
+		background-image: -webkit-linear-gradient( left, $params... );
+		background-image: -moz-linear-gradient( left, $params... );
+		background-image: -o-linear-gradient( left, $params... );
+		background-image: linear-gradient( to right, $params... );
+	}
+
+	// INPUT PLACEHOLDER
+	@mixin input-placeholder( $color ) {
+		&::-webkit-input-placeholder { color: $color; }
+		&:-moz-placeholder { color: $color; }
+		&::-moz-placeholder { color: $color; }
+		&:-ms-input-placeholder { color: $color; }
+	}
+
+	// VERTICAL GRADIENT
+	@mixin vertical-gradient( $from, $to ) {
+		background-image: -webkit-gradient( linear, left top, left bottom, from( $from ), to( $to ) );
+		background-image: -webkit-linear-gradient( top, $from, $to );
+		background-image:    -moz-linear-gradient( top, $from, $to );
+		background-image:      -o-linear-gradient( top, $from, $to );
+		background-image:         linear-gradient( to bottom, $from, $to );
+	}
+
+	/* -------------------------------------------------------------------------
+        TYPOGRAPHY
+	------------------------------------------------------------------------- */
+
+	html { background-color: $footer-bg; }
+	body { color: $body-font; background-color: #FFF; }
+	a { color: $body-link; }
+	abbr { border-color: $body-font; }
+	kbd,
+	code,
+	pre { color: #1565c0; background-color: #e5e9f0; }
+
+	// HEADINGS
+	h1, h2, h3, h4, h5 { color: $dark-gray; }
+	h1 a, h2 a, h3 a, h4 a, h5 a { color: $dark-gray; }
+	h6 { color: $soft-gray; }
+
+	// DEFINITION LIST
+	dt { color: $dark-gray; }
+
+	// BLOCKQUOTE
+	blockquote:before { color: #FFF; background-color: $accent; }
+
+	// TABLE
+	table,
+	table td { border-color: $x-soft-gray; }
+	table th,
+	table th a { color: $accent; }
+
+	/* -------------------------------------------------------------------------
+		FORMS
+	------------------------------------------------------------------------- */
+
+	label { color: $soft-gray; }
+	input, textarea, select { color: $gray; background-color: $x-soft-gray; @include input-placeholder( $gray ); }
+
+	/* -------------------------------------------------------------------------
+		UTILITY CLASSES
+	------------------------------------------------------------------------- */
+
+    .wp-caption-text { color: $gray; }
+
+
+/* -----------------------------------------------------------------------------
+
+    2. COMPONENTS
+
+----------------------------------------------------------------------------- */
+
+	/* -------------------------------------------------------------------------
+        ACCORDION
+    ------------------------------------------------------------------------- */
+
+    .c-accordion {
+    	.accordion-item { background-color: $x-soft-gray; }
+    	.accordion-item.m-active { border-color: $accent; }
+    	.accordion-item:before,
+		.accordion-item-title { color: $dark-gray; }
+		.accordion-item.m-active:before,
+		.m-active .accordion-item-title { color: $accent; }
+    }
+
+	/* -------------------------------------------------------------------------
+        ALERT MESSAGE
+    ------------------------------------------------------------------------- */
+
+	@mixin c-alert-message { color: $info-font; background-color: $info-bg;
+		&.m-type-warning { color: $warning-font; background-color: $warning-bg; }
+		&.m-type-success { color: $success-font; background-color: $success-bg; }
+	}
+	.c-alert-message { @include c-alert-message; }
+
+	/* -------------------------------------------------------------------------
+        BLOG LIST
+    ------------------------------------------------------------------------- */
+
+    .c-blog-list {
+    	.blog-list-more:after { background-color: $x-soft-gray; }
+    	.blog-list-more > span { background-color: $page-wrapper-bg; }
+    	.post-date { color: $soft-gray; }
+    }
+
+	/* -------------------------------------------------------------------------
+        BUTTON
+    ------------------------------------------------------------------------- */
+
+    @mixin c-button { color: #FFF; background-color: $accent; border-color: $accent; }
+    .c-button { @include c-button;
+    	&.m-style-outline { color: $accent; background-color: transparent; }
+    }
+
+	/* -------------------------------------------------------------------------
+        CONTENT GRID
+    ------------------------------------------------------------------------- */
+
+	.c-content-grid {
+
+		// HEADER
+		.content-grid-header:after { background-color: $x-soft-gray; }
+		.content-grid-title { background-color: $page-wrapper-bg; color: $gray; }
+		.content-grid-btn { background-color: $page-wrapper-bg; }
+
+		// CONTENT
+		.brick-list > .widget > .widget-inner,
+		.brick-item-inner { border-color: $x-soft-gray; }
+		.cta-brick .brick-item-inner { background-color: $x-soft-gray; }
+		.folder-icon { color: $accent; }
+
+	}
+
+	/* -------------------------------------------------------------------------
+        CONTENTS
+    ------------------------------------------------------------------------- */
+
+	.c-contents {
+		.contents-title:after { background-color: $x-soft-gray; }
+		.contents-title span { background-color: $page-wrapper-bg; }
+	}
+
+	/* -------------------------------------------------------------------------
+		FAQ
+	------------------------------------------------------------------------- */
+
+	.c-faq-list {
+		.post-item { border-color: $x-soft-gray; }
+		.m-active .post-item-inner { border-color: $accent; }
+		.post-item-permalink a { color: $soft-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+		FEATURE
+	------------------------------------------------------------------------- */
+
+	.c-feature .feature-icon { color: #FFF; background-color: $soft-gray; }
+
+	/* -------------------------------------------------------------------------
+        KB ARTICLES
+    ------------------------------------------------------------------------- */
+
+	.c-kb-articles {
+		.kb-article-icon { color: $soft-gray; }
+		.kb-article-title a { color: $body-link; }
+	}
+
+	/* -------------------------------------------------------------------------
+        PAGINATION
+    ------------------------------------------------------------------------- */
+
+    #main .navigation.pagination { border-color: $x-soft-gray;
+		.dots { color: $soft-gray; }
+		.current { color: #FFF; background-color: $accent; }
+		a:not( .current ):hover { background-color: $x-soft-gray; }
+    }
+
+	/* -------------------------------------------------------------------------
+        POST COMMENTS
+    ------------------------------------------------------------------------- */
+
+    .c-post-comments {
+
+		// POST COMMENTS LIST
+		.comments-list > li,
+		.comments-list .children > li { border-color: $x-soft-gray; }
+		.comment-author a { color: $body-font; }
+		.bypostauthor .comment-author a { color: $accent; }
+		.comment-meta { color: $gray; }
+		.comment-metadata a { color: $soft-gray; }
+		.comment-metadata .comment-edit-link { color: $accent; }
+		ul.page-numbers {
+			.current { color: #FFF; background-color: $accent; }
+			a:not( .current ):hover { background-color: $x-soft-gray; }
+		}
+
+		// POST COMMENTS FORM
+		.comment-notes { @include c-alert-message; }
+		.comment-form input[type="submit"] { @include c-button; }
+		.comment-reply-title small a { color: $body-link; }
+
+	}
+
+	/* -------------------------------------------------------------------------
+        POST LIST
+    ------------------------------------------------------------------------- */
+
+	.c-post-list {
+		.post-item:hover { background-color: $x-soft-gray; }
+		.post-icon { color: $soft-gray; }
+		.post-title a { color: $body-link; }
+	}
+
+	/* -------------------------------------------------------------------------
+        POST RATING
+    ------------------------------------------------------------------------- */
+
+    .c-post-rating {
+    	.likes { color: $accent; }
+    	.dislikes { color: $soft-gray; }
+    }
+
+	/* -------------------------------------------------------------------------
+        SEARCH FORM
+    ------------------------------------------------------------------------- */
+
+    .c-search-form {
+    	.input-holder { color: $gray; background-color: $x-soft-gray; @include input-placeholder( $gray ); }
+    	.submit-btn { color: $accent; }
+    }
+
+	/* -------------------------------------------------------------------------
+        SEPARATOR
+    ------------------------------------------------------------------------- */
+
+    .c-separator { border-color: $x-soft-gray; }
+    .c-separator.m-style-transparent { border-color: transparent; }
+
+	/* -------------------------------------------------------------------------
+        SUBSCRIBE FORM
+    ------------------------------------------------------------------------- */
+
+    .c-subscribe-form {
+    	input[type="text"], input[type="email"] {  }
+    	input[type="submit"] { color: #FFF; background-color: $accent; }
+    }
+
+	/* -------------------------------------------------------------------------
+        TABS
+    ------------------------------------------------------------------------- */
+
+	.c-tabs {
+		.tabs-title-list {
+			> li { color: $soft-gray; border-color: $x-soft-gray; }
+			> li.m-active { color: $accent; border-color: $accent; }
+		}
+		.tabs-title-list:before { background-color: $x-soft-gray; }
+	}
+
+
+/* -----------------------------------------------------------------------------
+
+    3. WIDGETS
+
+----------------------------------------------------------------------------- */
+
+	/* -------------------------------------------------------------------------
+        LORE FAQ WIDGET
+    ------------------------------------------------------------------------- */
+
+    .widget.lsvr-faq {
+		ul a { color: $dark-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+        LORE FAQ CATEGORIES WIDGET
+    ------------------------------------------------------------------------- */
+
+    .widget.lsvr-faq-categories { color: $soft-gray;
+		ul a { color: $dark-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+        LORE KB CATEGORIES WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.lsvr-kb-categories {
+		a,
+		.toggle { color: $dark-gray; border-color: $soft-gray; }
+		.toggle.m-active { color: $accent; border-color: $accent; }
+		.root-level ul a { color: $gray; }
+		.post-count,
+		.post-icon,
+		.category-icon { color: $soft-gray; }
+		.m-current-cat > .item-link,
+		.m-current-post > .item-link { background-color: $x-soft-gray; border-color: $accent; }
+		.m-current-cat > .item-link .category-icon,
+		.m-current-post > .item-link .post-icon,
+		.m-current-cat > .item-link a,
+		.m-current-post > .item-link a { color: $accent; }
+	}
+
+	/* -------------------------------------------------------------------------
+        LORE KB ARTICLES WIDGET
+    ------------------------------------------------------------------------- */
+
+    .widget.lsvr-kb-articles {
+		.post-icon,
+		.post-date { color: $soft-gray; }
+		.post-title { color: $dark-gray; }
+    }
+
+	/* -------------------------------------------------------------------------
+        ARCHIVE WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_archive { color: $soft-gray;
+		a { color: $dark-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+        CALENDAR WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_calendar {
+		.calendar_wrap { background-color: #f5f6f9; }
+		caption { color: $dark-gray; }
+		thead { border-color: #e5e9f0; }
+		thead th { color: #a6a9b7; }
+		#today { color: #FFF; background-color: $accent; }
+		a { color: $accent; }
+	}
+
+	/* -------------------------------------------------------------------------
+        CATEGORIES WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_categories { color: $soft-gray;
+		a { color: $dark-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+        CUSTOM MENU WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_nav_menu {
+		a { color: $dark-gray; }
+		.toggle { color: $dark-gray; border-color: $soft-gray; }
+		.toggle.m-active { color: $accent; border-color: $accent; }
+	}
+
+	/* -------------------------------------------------------------------------
+		META WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_meta a { color: $dark-gray; }
+
+	/* -------------------------------------------------------------------------
+		PAGES WIDGET
+    ------------------------------------------------------------------------- */
+
+    .widget.widget_pages a { color: $dark-gray; }
+
+	/* -------------------------------------------------------------------------
+		RECENT COMMENTS WIDGET
+    ------------------------------------------------------------------------- */
+
+    .widget.widget_recent_comments { color: $soft-gray;
+		a { color: $dark-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+		RECENT POSTS WIDGET
+    ------------------------------------------------------------------------- */
+
+    .widget.widget_recent_entries { color: $soft-gray;
+		a { color: $dark-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+		RSS WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_rss {
+		ul a { color: $accent; }
+		ul > li { border-color: rgba( #000, .05 ); }
+		.rss-date { color: $soft-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+		TAG CLOUD WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_tag_cloud a { color: $dark-gray; }
+
+    /* -------------------------------------------------------------------------
+        bbPRESS SEARCH WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_display_search {
+		input.button { @include c-button; }
+	}
+
+    /* -------------------------------------------------------------------------
+        bbPRESS RECENT REPLIES WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_display_replies {
+		ul { color: $soft-gray; }
+	}
+
+    /* -------------------------------------------------------------------------
+        bbPRESS RECENT TOPICS WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_display_topics {
+		ul { color: $soft-gray; }
+	}
+
+    /* -------------------------------------------------------------------------
+        bbPRESS STATISTICS WIDGET
+    ------------------------------------------------------------------------- */
+
+	.widget.widget_display_stats {
+		dl > dt { color: $gray; }
+	}
+
+
+/* -----------------------------------------------------------------------------
+
+    4. HEADER
+
+----------------------------------------------------------------------------- */
+
+#header { background-color: $header-bg; }
+
+// HEADER OVERLAY
+.header-bg.m-overlay-5:after { background-color: rgba( #000, .05 ); }
+$opacity: 10;
+@while $opacity < 100 {
+	.header-bg.m-overlay-#{$opacity}:after {
+		background-color: rgba( #000, $opacity / 100 )
+	}
+	$opacity: $opacity + 5
+}
+.header-bg.m-overlay-100:after { background-color: #000; }
+
+	/* -------------------------------------------------------------------------
+        HEADER NAVBAR
+    ------------------------------------------------------------------------- */
+
+	.header-navbar { color: $header-navbar-font; background-color: $header-navbar-bg; }
+	@media ( min-width: 991px ) {
+		.m-scrolled .header-navbar { background-color: $header-navbar-scrolled-bg; }
+	}
+
+		/* ---------------------------------------------------------------------
+        	HEADER BRANDING
+    	--------------------------------------------------------------------- */
+
+    	.header-branding h1,
+    	.header-branding a { color: $header-navbar-font; }
+
+		/* ---------------------------------------------------------------------
+        	HEADER MENU HOLDER
+    	--------------------------------------------------------------------- */
+
+			/* -----------------------------------------------------------------
+        		HEADER MENU
+    		----------------------------------------------------------------- */
+
+    		.header-menu {
+
+	    		// LEVEL 1
+	    		> ul > li > a { color: $header-navbar-font; }
+	    		> ul > li.current-menu-ancestor > a,
+	    		> ul > li.current-menu-item > a { border-color: $header-navbar-font; }
+	    		> ul > li > a:hover,
+	    		> ul > li.m-hover > a { color: $dark-gray; background-color: $header-navbar-font; }
+
+	    		// LEVEL 2+
+	    		ul ul > li { background-color: $header-submenu-bg; }
+	    		ul ul a { color: $header-submenu-font; }
+	    		ul ul a:hover,
+	    		ul ul li.m-hover > a { background-color: $accent; }
+				ul ul li { border-color: rgba( #FFF, .05 ); }
+
+	    		// LEVEL 2
+	    		> ul > li > ul:before { border-bottom-color: $header-submenu-bg; }
+
+	    		// LEVEL 3+
+	    		ul ul ul > li { background-color: lighten( $header-submenu-bg, 5% ); }
+
+	    		.submenu-toggle { color: $header-mobile-menu-font; border-color: #FFF; border-color: rgba( #FFF, .5 ); }
+
+    		}
+
+    		// SCROLLED HEADER
+    		.m-scrolled .header-menu {
+    			ul ul > li { background-color: lighten( $header-submenu-bg, 10% ); }
+    			> ul > li > ul:before { border-bottom-color: lighten( $header-submenu-bg, 10% ); }
+    			ul ul ul > li { background-color: lighten( $header-submenu-bg, 15% ); }
+    		}
+
+			/* -----------------------------------------------------------------
+        		HEADER COMPACT SEARCH
+    		----------------------------------------------------------------- */
+
+    		.header-compact-search {
+    			.toggle { color: $header-navbar-font; }
+    			&.m-active .toggle { color: $dark-gray; background-color: $header-navbar-font; }
+    		}
+    		.header-compact-search-form-holder { @include box-shadow( 0 2px 10px rgba( #000, .1 ) ); color: $body-font; }
+    		.header-compact-search-form-holder:after {  border-bottom-color: #FFF; }
+
+			/* -----------------------------------------------------------------
+        		HEADER LANGUAGES
+    		----------------------------------------------------------------- */
+
+			.header-languages ul { background-color: $dark-gray; background-color: rgba( $dark-gray, .5 ); }
+    		.header-languages a { color: $header-navbar-font; }
+    		.header-languages .m-active a { color: $dark-gray; background-color: $header-navbar-font; }
+
+			/* -----------------------------------------------------------------
+        		HEADER MOBILE TOGGLE
+    		----------------------------------------------------------------- */
+
+    		.header-mobile-toggle { color: $header-navbar-font; border-color: $header-navbar-font; }
+    		.header-mobile-toggle.m-active { color: $dark-gray; background-color: $header-navbar-font; }
+
+	/* -------------------------------------------------------------------------
+        HEADER SEARCH
+    ------------------------------------------------------------------------- */
+
+	.header-search-form {
+		.text-input { color: $accent; background-color: #FFF; }
+    	.text-input::-webkit-input-placeholder { color: $gray; }
+    	.text-input:-moz-placeholder { color: $gray; }
+    	.text-input::-moz-placeholder { color: $gray; }
+    	.text-input:ms-input-placeholder { color: $gray; }
+		.text-input:focus { border-color: transparent; }
+    	.submit-btn { color: $accent; }
+    	.loading-anim { color: $soft-gray; }
+	}
+
+	// SEARCH OPTIONS
+	.header-search-options { background-color: #FFF; border-color: $accent; @include box-shadow( 0 2px 10px rgba( #000, .1 ) ); }
+
+		// SEARCH FILTER
+		.header-search-filter {
+			span { color: $soft-gray; }
+			label { color: $body-font; border-color: $x-soft-gray; }
+			label.m-active { color: #FFF; background-color: $accent; border-color: $accent; }
+			label:hover { border-color: $accent; }
+		}
+
+		// SEARCH RESULTS
+    	.header-search-results { border-color: $x-soft-gray;
+    		ul a:hover,
+    		ul .m-active { background-color: $x-soft-gray; }
+    		.ico { color: $soft-gray; }
+    		.more-link { border-color: $x-soft-gray; }
+    	}
+
+	// SEARCH SUGGESTIONS
+	.header-search-suggestions-inner { color: #FFF; background-color: $accent; }
+	.header-search-suggestions a { color: #FFF; }
+
+
+/* -----------------------------------------------------------------------------
+
+    5. CORE
+
+----------------------------------------------------------------------------- */
+
+#core { background-color: $core-bg; }
+.page-wrapper-inner { background-color: $page-wrapper-bg; }
+.column-content:before,
+.column-sidebar:before { background-color: $x-soft-gray; }
+
+	/* -------------------------------------------------------------------------
+        MAIN HEADER
+    ------------------------------------------------------------------------- */
+
+	// BREADCRUMBS
+	.breadcrumbs,
+	.breadcrumbs a { color: $gray; }
+
+	// TITLE
+	.main-header h1 .search-query { color: $soft-gray; }
+
+	/* -------------------------------------------------------------------------
+        SIDEBAR
+    ------------------------------------------------------------------------- */
+
+    #sidebar {
+
+    	.widget { border-color: $x-soft-gray; }
+    	.widget-title { color: $soft-gray; }
+		a { color: $body-font; }
+		.widget-more-link a { color: $body-link; }
+
+    }
+
+
+/* -----------------------------------------------------------------------------
+
+    6. STANDARD POSTS
+
+----------------------------------------------------------------------------- */
+
+.page-post {
+
+	// POST CONTENT
+	.post-password-form input[type="submit"] { @include c-button; }
+
+}
+
+	/* -------------------------------------------------------------------------
+        ARCHIVE PAGE
+    ------------------------------------------------------------------------- */
+
+	.page-post-archive {
+
+		.post-item-inner { border-color: $soft-gray; }
+		.post-item.sticky .post-title:before { color: $gray; }
+
+		// POST HEADER
+		.post-title a { color: $dark-gray; }
+		.post-title a:hover { color: $accent; }
+		.post-meta .ico { color: $soft-gray; }
+
+		// POST FOOTER
+		.post-footer:after { background-color: $x-soft-gray; }
+		.post-date { color: $soft-gray; background-color: $page-wrapper-bg; }
+		.read-more { background-color: $page-wrapper-bg; }
+
+	}
+
+	/* -------------------------------------------------------------------------
+        SINGLE PAGE
+    ------------------------------------------------------------------------- */
+
+	.page-post-single {
+
+		// POST HEADER
+		.post-meta .ico { color: $soft-gray; }
+
+		// POST FOOTER
+		.post-tags .ico { color: $soft-gray; }
+
+		// AUTHOR BIO
+		.post-author-bio { border-color: $x-soft-gray; }
+		.post-author-bio h5 { color: $gray; }
+		.post-author-bio h5 span { color: $accent; }
+
+        // POST NAVIGATION
+        .post-navigation { background-color: $x-soft-gray; background-color: rgba( $x-soft-gray, .5 );
+        	h6 a { color: $soft-gray; }
+        	.previous-post:after,
+			.next-post:after { background-color: $x-soft-gray; }
+		}
+
+	}
+
+
+/* -----------------------------------------------------------------------------
+
+    7. KNOWLEDGE BASE
+
+----------------------------------------------------------------------------- */
+
+	/* -------------------------------------------------------------------------
+        CATEGORY VIEW ARCHIVE PAGE
+    ------------------------------------------------------------------------- */
+
+	.page-kb-post-archive-category-view {
+
+		.category-item-inner { border-color: $x-soft-gray; }
+
+		// CATEGORY HEADER
+		.category-icon { color: $accent; }
+
+		// CONTENT
+		.child-list-title:after { background-color: $x-soft-gray; }
+		.child-list-title span { background-color: $page-wrapper-bg; }
+		.child-icon,
+		.subcategory-post-count { color: $soft-gray; }
+
+	}
+
+	/* -------------------------------------------------------------------------
+        CATEGORY PAGE
+    ------------------------------------------------------------------------- */
+
+    .page-kb-post-tax-category {
+    	.category-item-inner { border-color: $x-soft-gray; }
+    	.category-icon { color: $soft-gray; }
+    	.category-title a { color: $body-link; }
+    	.category-count { color: $soft-gray; }
+    }
+
+	/* -------------------------------------------------------------------------
+        SINGLE PAGE
+    ------------------------------------------------------------------------- */
+
+	.page-kb-post-single {
+
+		// POST ATTACHMENTS
+		.post-attachments { background-color: $x-soft-gray; background-color: rgba( $x-soft-gray, .4 );
+			.attachments-title { color: $soft-gray; }
+			.attachments-list > li { border-color: $x-soft-gray; }
+			.attachment-icon,
+			.attachment-filesize { color: $soft-gray; }
+		}
+
+		// POST FOOTER
+		.post-date { color: $soft-gray; }
+		.post-meta { border-color: $x-soft-gray; }
+		.post-meta .ico { color: $soft-gray; }
+
+		// POST RATING
+		.post-rating-inner:after { background-color: $x-soft-gray; }
+		.post-rating-title { color: $gray; background-color: $page-wrapper-bg; }
+		.post-rating-buttons { background-color: $page-wrapper-bg; }
+		.post-rating-buttons button { border-color: $x-soft-gray; }
+		.post-rating-buttons .like { color: $accent; }
+		.post-rating-buttons .dislike { color: $soft-gray; }
+
+		// POST RELATED
+		.post-related,
+		.post-related.m-bottom-border { border-color: $x-soft-gray; }
+		.related-post-icon { color: $soft-gray; }
+
+	}
+
+
+/* -----------------------------------------------------------------------------
+
+    8. FAQ
+
+----------------------------------------------------------------------------- */
+
+	/* -------------------------------------------------------------------------
+        ARCHIVE PAGE
+    ------------------------------------------------------------------------- */
+
+	.faq-post-list-accordion {
+		.post-item { border-color: $x-soft-gray; }
+		.m-active .post-item-inner { border-color: $accent; }
+		.post-item-permalink a { color: $soft-gray; }
+	}
+
+	/* -------------------------------------------------------------------------
+        SINGLE PAGE
+    ------------------------------------------------------------------------- */
+
+	.page-faq-post-single {
+		.post-date { color: $soft-gray; }
+		.post-meta { border-color: $x-soft-gray; }
+		.post-meta .ico { color: $soft-gray; }
+	}
+
+
+/* -----------------------------------------------------------------------------
+
+    9. FOOTER
+
+----------------------------------------------------------------------------- */
+
+#footer { color: $footer-font; background-color: $footer-bg; }
+#footer a { color: $footer-link; }
+
+	/* -------------------------------------------------------------------------
+        FOOTER TOP
+    ------------------------------------------------------------------------- */
+
+    .footer-top { background-color: $footer-top-bg; }
+    #footer .footer-menu a { color: $footer-menu-font; }
+    #footer .footer-social a { color: $footer-social-font; }
+    #footer .footer-social a:hover { color: #FFF; }
+
+	/* -------------------------------------------------------------------------
+        FOOTER WIDGETS
+    ------------------------------------------------------------------------- */
+
+    .footer-widgets {
+
+    	.widget-title { color: $footer-widget-title; }
+    	input, textarea, select { color: #a6a9b7; background-color: #42434c; @include input-placeholder( #a6a9b7 ); }
+
+	    // KB CATEGORIES WIDGET
+	    .widget.lsvr-kb-categories .toggle { color: #FFF; border-color: #FFF; border-color: rgba( #FFF, .5 ); }
+	    .widget.lsvr-kb-categories .post-count,
+	    .widget.lsvr-kb-categories .post-icon,
+	    .widget.lsvr-kb-categories .category-icon { color: #a6a9b7; }
+	    .widget.lsvr-kb-categories .m-current-cat > .item-link,
+	    .widget.lsvr-kb-categories .m-current-post > .item-link { background-color: transparent; }
+	    .widget.lsvr-kb-categories .m-current-cat > .item-link .category-icon,
+	    .widget.lsvr-kb-categories .m-current-post > .item-link .post-icon { color: #a6a9b7; }
+
+	    // KB ARTICLES WIDGET
+	    .widget.lsvr-kb-articles .post-icon,
+	    .widget.lsvr-kb-articles .post-date { color: #a6a9b7; }
+
+    	// CALENDAR WIDGET
+		.widget.widget_calendar {
+			.calendar_wrap { background-color: #42434c; }
+			caption { color: #FFF;  }
+			thead { border-color: rgba( #FFF, .1 ); }
+			a { color: $accent; }
+			table tbody > tr:nth-child(2n+1) { background-color: transparent; }
+		}
+
+    	// CUSTOM MENU
+		.widget.widget_nav_menu {
+			.toggle { color: #FFF; border-color: #FFF; border-color: rgba( #FFF, .5 ); }
+		}
+
+        // RECENT COMMENTS WIDGET
+	    .widget.widget_recent_comments {
+			a { color: $footer-link; }
+		}
+
+        // RECENT POSTS WIDGET
+	    .widget.widget_recent_entries {
+			a { color: $footer-link; }
+		}
+
+        // RSS WIDGET
+		.widget.widget_rss {
+			ul a { color: $footer-link; }
+		}
+
+        // TAG CLOUD WIDGET
+		.widget.widget_tag_cloud a { color: $footer-link; }
+
+		// SEARCH WIDGET
+		.c-search-form .input-holder { background-color: transparent; }
+		.c-search-form .submit-btn { color: #FFF; }
+
+		// SUBSCRIBE FORM
+		.c-subscribe-form {
+    		input[type="text"], input[type="email"] { color: #a6a9b7; background-color: #42434c; @include input-placeholder( #a6a9b7 ); }
+    	}
+
+        // bbPRESS RECENT REPLIES WIDGET
+		.widget.widget_display_replies {
+			ul { color: $footer-font; }
+		}
+
+        // bbPRESS RECENT TOPICS WIDGET
+		.widget.widget_display_topics {
+			ul { color: $footer-font; }
+		}
+
+        // bbPRESS STATISTICS WIDGET
+		.widget.widget_display_stats {
+			dl > dt { color: $footer-font; }
+		}
+
+    }
+
+	/* -------------------------------------------------------------------------
+        FOOTER BOTTOM
+    ------------------------------------------------------------------------- */
+
+	.footer-bottom { color: $footer-text-font; border-color: rgba( #FFF, .05 ); }
+	#footer .footer-scroll-top a { color: $footer-back-to-top-font; }
+
+
+/* -----------------------------------------------------------------------------
+
+    10. OTHER
+
+----------------------------------------------------------------------------- */
+
+	/* -------------------------------------------------------------------------
+        bbPRESS
+    ------------------------------------------------------------------------- */
+
+	// LOGIN
+	.bbp-submit-wrapper button { color: #FFF; border-color: $accent; background-color: $accent; }
+	.bbp-submit-wrapper button:hover { border-color: rgba( $accent, .5 ); background-color: rgba( $accent, .8 ); }
+
+	// NOTICES
+	div.bbp-template-notice,
+	div.bbp-template-notice.info,
+	div.bbp-template-notice.important { @include c-alert-message; }
+	div.bbp-template-notice.error { color: $warning-font; background-color: $warning-bg; }
+	div.bbp-template-notice a { color: $body-link; }
+	div.bbp-template-notice a:hover { color: $body-link; }
+
+	#bbpress-forums {
+
+		> #subscription-toggle a.subscription-toggle { @include c-button; }
+
+		// TAGS
+		.bbp-topic-tags { color: $body-font;  }
+		.bbp-topic-tags a { color: $body-link; }
+
+		// PAGINATION
+		.bbp-pagination-count { color: $soft-gray; }
+	    .bbp-pagination-links { border-color: $x-soft-gray;
+			.current { color: #FFF; background-color: $accent; }
+			a:not( .current ):hover { background-color: $x-soft-gray; }
+	    }
+
+		// WRAPPER
+		.bbp-forums,
+		.bbp-topics,
+		.bbp-replies { background-color: $page-wrapper-bg; }
+
+		// HEADER
+		li.bbp-header { color: $soft-gray; background-color: #FFF; border-color: $x-soft-gray; }
+
+		// TOPIC
+		div.bbp-topic-header { border-color: $x-soft-gray; background-color: transparent; }
+		li.bbp-body > ul.forum,
+		li.bbp-body > ul.topic { border-color: $x-soft-gray; }
+		div.odd,
+		ul.odd { background-color: transparent; }
+		.bbp-forums-list { border-color: $x-soft-gray; }
+
+		// POST
+		div.bbp-reply-header { border-color: $x-soft-gray; background-color: transparent; }
+
+		// FORMS
+		.bbp-reply-form,
+		.bbp-topic-form { background-color: $page-wrapper-bg; }
+		form > fieldset.bbp-form > legend,
+		fieldset.bbp-form fieldset.bbp-form > legend { color: $dark-gray; }
+		.quicktags-toolbar { background-color: #FFF; border-color: $x-soft-gray; }
+
+		// FOOTER
+		li.bbp-footer { background-color: #FFF; border-color: $x-soft-gray; }
+
+		// USER
+		#bbp-user-wrapper { background-color: $page-wrapper-bg; }
+		#bbp-single-user-details #bbp-user-navigation li.current a { background-color: transparent; }
+
+		// OTHER
+		.status-closed,
+		.status-closed a { color: $soft-gray; }
+		span.bbp-admin-links a,
+		.bbp-forum-header a.bbp-forum-permalink,
+		.bbp-topic-header a.bbp-topic-permalink,
+		.bbp-reply-header a.bbp-reply-permalink { color: $dark-gray; }
+
+		// PROFILE EDIT
+		#bbp-your-profile {
+			fieldset input, fieldset textarea { color: $body-font; background-color: $x-soft-gray; }
+			fieldset input[type="file"] { background-color: transparent; }
+			#bbp_user_edit_submit { color: #FFF; border-color: $accent; background-color: $accent; }
+			#bbp_user_edit_submit:hover { border-color: rgba( $accent, .5 ); background-color: rgba( $accent, .8 ); }
+			fieldset input:focus,
+			fieldset textarea:focus { border: 0; @include box-shadow( none ); outline-color: transparent; }
+		}
+
+		// SEARCH RESULTS
+		#bbp-search-results { background-color: #FFF; }
+
+		// STICKY
+		.bbp-topics-front ul.super-sticky,
+		.bbp-topics ul.super-sticky,
+		.bbp-topics ul.sticky,
+		.bbp-forum-content ul.sticky { background-color: transparent!important; } /* !important is required to override default bbPress styles which use !important */
+		.bbp-topics-front ul.super-sticky:before,
+		.bbp-topics ul.super-sticky:before,
+		.bbp-topics ul.sticky:before,
+		.bbp-forum-content ul.sticky:before { color: $soft-gray; }
+
+	}
+
+	/* -------------------------------------------------------------------------
+        MAILCHIMP FOR WORDPRESS
+    ------------------------------------------------------------------------- */
+
+	.mc4wp-alert { @include c-alert-message; }
+
+
+/* -----------------------------------------------------------------------------
+
+    11. RESPONSIVE
+
+----------------------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------------------
+        MEDIUM DEVICES
+    ------------------------------------------------------------------------- */
+
+    @media ( max-width: 991px ) {
+
+		// HEADER
+		.m-mobile-menu-expanded .header-inner { background-color: $header-mobile-menu-bg; }
+		.header-menu { background-color: $header-mobile-menu-bg;
+			ul ul { @include box-shadow( none ); }
+			> ul > li,
+			ul ul > li,
+			ul ul ul > li,
+			ul ul li:first-child { border-color: rgba( #FFF, .05 ); background-color: transparent; }
+			> ul > li > a,
+			ul ul a { color: $header-mobile-menu-font; }
+			> ul > li > a:hover,
+			ul ul a:hover { color: $header-mobile-menu-font; background-color: $accent; }
+			> ul > li.current-menu-item > a,
+			li.current-menu-item > a { border-color: $accent; }
+			> ul > li > ul { background-color: lighten( $header-mobile-menu-bg, 5% ); }
+		}
+		.m-scrolled .header-menu {
+			ul ul > li,
+			ul ul ul > li { background-color: transparent; }
+		}
+
+		// CORE
+		#core { background-color: $page-wrapper-bg; }
+
+		// SIDEBAR
+		#sidebar { border-color: $x-soft-gray; }
+
+    }

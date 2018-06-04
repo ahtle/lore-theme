@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lore - WordPress Theme Documentation</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        	body { margin: 0; padding: 50px; font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 16px;
+        		color: #333; }
+    		a { color: #1565c0; }
+    		a:hover { text-decoration: none; }
+    		h2 { text-transform: uppercase; letter-spacing: .05em; color: #74aa7b; }
+    		img { max-width: 100%; }
+    		p { margin: 30px 0; }
+    		hr { margin: 60px 0; border: 0; border-top: 1px solid #DDD; }
+    		ol { margin: -25px 0 30px 0; color: #aaa; font-size: .75em; }
+    		pre { padding: 20px; background-color: #eee; }
+    		#wrapper { max-width: 900px; margin: 0 auto; }
+    		#header { margin-bottom: 60px; }
+    		.main-menu { padding: 30px; border: 1px solid #DDD; }
+    		.main-menu ul { margin: 0; padding: 0; list-style-type: none; }
+    		.main-menu ul > li { margin-top: 10px; }
+    		.main-menu ul > li:first-child { margin-top: 0; }
+    		.main-menu ul ul { margin: 10px 0 0 30px; font-size: .875em; }
+    		.c-alert-message { position: relative; margin: 0 0 30px 0; padding: 14px 30px; font-size: .938em; border: 0; border-radius: 3px; overflow: hidden; z-index: 1;
+    			color: #5987bb; background-color: #dce8f6; }
+    		.c-alert-message p { margin: 15px 0 0 0; }
+			.c-alert-message p:first-child { margin: 0; }
+			#content ul { margin: 30px 0; }
+			#content ul > li { margin: 15px 0 0 0; }
+			#content ul > li:first-child { margin: 0; }
+        </style>
+    </head>
+    <body>
+
+	<!-- WRAPPER : begin -->
+	<div id="wrapper">
+
+		<!-- HEADER : begin -->
+		<header id="header">
+
+			<h1>LORE</h1>
+			<p>Knowledge Base WordPress Theme</p>
+
+			<!-- MAIN MENU : begin -->
+			<nav class="main-menu">
+				<ul>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#theme-installation">Theme Installation</a></li>
+					<li><a href="#plugins-installation">Plugins Installation</a></li>
+					<li><a href="#demo-data-import">Demo Data Import</a></li>
+					<li><a href="#content-editing">Content Editing</a></li>
+					<li>
+						<a href="#customization">Customization</a>
+						<ul>
+							<li><a href="#customization-customizer">Customizer</a></li>
+							<li><a href="#customization-sidebars-and-widgets">Sidebars &amp; Widgets</a></li>
+							<li><a href="#customization-color-scheme">Color Scheme</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#how-to">How To</a>
+						<ul>
+							<li><a href="#how-to-front-page">Front Page</a></li>
+							<li><a href="#how-to-theme-translation">Theme Translation</a></li>
+							<li><a href="#how-to-updating-the-theme">Updating the Theme</a></li>
+							<li><a href="#how-to-icons">Icons</a></li>
+							<li><a href="#how-to-excerpt">Excerpt</a></li>
+							<li><a href="#how-to-contact-form">Contact Form</a></li>
+							<li><a href="#how-to-forum-bbpress">Forum (bbPress)</a></li>
+							<li><a href="#how-to-shortcode-generator">Shortcode Generator</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- MAIN MENU : end -->
+
+		</header>
+		<!-- HEADER : end -->
+
+		<!-- CORE : begin -->
+		<div id="core">
+
+			<!-- CONTENT : begin -->
+			<div id="content">
+
+				<!-- INTRODUCTION : begin -->
+				<section id="introduction">
+
+					<h2>Introduction</h2>
+
+					<p><strong>Thank you for your purchasing Lore theme!</strong></p>
+
+					<p>Please note, that this documentation doesn’t cover WordPress basics too extensively, so if you are new to WordPress, we highly
+					recommend you to read through some <a href="http://codex.wordpress.org/Getting_Started_with_WordPress">beginner tutorials</a> first.</p>
+
+					<div class="c-alert-message">
+						<p>Please check out&nbsp;<a href="https://wordpress.org/about/requirements/">the recommended server requirements</a> for the WordPress installation and Lore theme itself</p>
+					</div>
+
+					<div class="c-alert-message">
+						<p>Besides the recommended server requirements for WordPress, make sure your PHP memory for WordPress is set to at least&nbsp;64MB. However, if you are going to use several 3rd party plugins, we recommend 128MB. You can read more about changing the PHP memmory in <a href="https://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP">WordPress codex</a></p>
+					</div>
+
+					<p>If you are already loving Lore theme, please don’t forget to rate it 5 stars under your <a href="http://themeforest.net/downloads">downloads section</a> of your ThemeForest profile. &nbsp;Thank you!</p>
+
+
+				</section>
+				<!-- INTRODUCTION : end -->
+
+				<hr>
+
+				<!-- THEME INSTALLATION : begin -->
+				<section id="theme-installation">
+
+					<h2>Theme Installation</h2>
+
+					<p>Once you’ve successfully <a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">installed WordPress</a>,
+					let’s proceed to the installation of the theme itself.</p>
+
+					<h3>Downloading The Package</h3>
+					<p>If you haven’t already, download the full package
+					from <a href="http://themeforest.net/downloads" target="_blank">your downloads</a> on ThemeForest</p>
+
+					<p><img src="content/installation-10.jpg" alt="installation-10"></p>
+					<ol>
+						<li>Click on Download button next to purchased item</li>
+						<li>Choose All files &amp; documentation and download the zip file</li>
+					</ol>
+
+					<p><img src="content/installation-20.jpg" alt=""></p>
+					<ol>
+						<li>Enable email notifications if you want to be informed when the new update is available</li>
+						<li>If you like the theme, don't forget to rate it 5* please. Thank you!</li>
+					</ol>
+
+					<p>When you unzip the downloaded file, you will see bunch of folders. The most important one is the
+					THEME folder which contains the installable theme .ZIP.</p>
+
+					<p><img src="content/installation-30.jpg" alt=""></p>
+					<ol>
+						<li>THEME folder contains the installable theme .ZIP</li>
+					</ol>
+
+					<h3>Installing the Theme</h3>
+					<p>Open your WordPress admin and navigate to Appearance / Themes</p>
+					<p><img src="content/installation-40.jpg" alt=""></p>
+					<ol>
+						<li>You can manage themes under Appearance / Themes</li>
+					</ol>
+
+					<p>Upload the installable theme .ZIP file</p>
+					<p><img src="content/installation-50.jpg" alt="">
+					<ol>
+						<li>Click on Add New button</li>
+						<li>Click on Upload Theme button</li>
+						<li>Choose theme .ZIP file</li>
+						<li>Submit the file</li>
+					</ol>
+
+            	<div class="c-alert-message">
+            		<p>If you have problems installing your theme via admin (as described above), you can try to <a href="https://codex.wordpress.org/Using_Themes#Adding_New_Themes_Manually_.28FTP.29" target="_blank">install it via FTP</a></p>
+            	</div>
+
+				<h3>Child Theme Installation</h3>
+				<p>If you don’t know what a WordPress child theme is, please read <a href="http://codex.wordpress.org/Child_Themes" target="_blank">this article
+					in WordPress codex</a>.</p>
+					<p>This documentation assume that you are running the child theme, so <strong>it is highly recommended to install it</strong>.
+					Child theme .ZIP can be found in Child Theme folder. Install it in exactly the same way as parent theme, described in previous steps.</p>
+					<p>Once you have both parent and child themes installed, <strong>you need to activate the child one</strong>.</p>
+					<div class="c-alert-message">
+						<p>It is recommended to set your Settings / Permalinks to “Post name”. Also, every time you are experiencing strange 404 error, re-save those settings.</p>
+					</div>
+
+				</section>
+				<!-- THEME INSTALLATION : end -->
+
+				<hr>
+
+				<!-- PLUGINS INSTALLATION : begin -->
+				<section id="plugins-installation">
+
+					<h2>Plugins Installation</h2>
+
+					<p>Once you’ve activated the theme, you should see a prompt message at the top of your admin informing you about required plugins.</p>
+
+					<p><img src="content/plugins-installation-10.jpg" alt=""></p>
+					<ol>
+						<li>Click on Begin installing plugins</li>
+					</ol>
+
+					<p><img src="content/plugins-installation-20.jpg" alt=""></p>
+					<ol>
+						<li>Select all plugins</li>
+						<li>Choose Install</li>
+						<li>Hit Apply</li>
+					</ol>
+
+					<p><img src="content/plugins-installation-30.jpg" alt=""></p>
+					<ol>
+						<li>Wait for plugins to be installed and then click on Return to Required Plugins installer</li>
+					</ol>
+
+					<p><img src="content/plugins-installation-40.jpg" alt=""></p>
+					<ol>
+						<li>Select all plugins</li>
+						<li>Choose Activate</li>
+						<li>Hit Apply</li>
+					</ol>
+
+					<p>That’s it. Required plugins should be now installed and activated.</p>
+					<p>Here is the list of required plugins <strong>if you are unable to see the prompt</strong> (for example if you’ve accidentally dismissed it):</p>
+
+					<h3>Lore Theme Toolkit</h3>
+					<p>This plugin contains lots of theme’s features, like custom post types, shortcodes and widgets. The plugin .zip can be found in full package in Plugins folder if you need to install it manually.</p>
+
+					<h3><a href="https://wordpress.org/plugins/kirki" target="_blank">Kirki</a></h3>
+					<p>Adds theme options into Customizer.</p>
+
+				</section>
+				<!-- PLUGINS INSTALLATION : end -->
+
+				<hr>
+
+				<!-- DEMO DATA IMPORT : begin -->
+				<section id="demo-data-import">
+
+					<h2>Demo Data Import</h2>
+
+					<p>Demo data are distributed via a separate file (lore-demo.xml), which <strong>can be found in theme’s full package</strong> (read the <a href="#theme-installation">Theme Installation</a> chapter to learn how to download the full package) in Demo Data folder.</p>
+					<p>To import the demo data, navigate to Tools / Import and click on WordPress. You may be prompted to install the Importer plugin if you don’t have it already. After you install and activate it, go again to Tools / Import / WordPress, <strong>choose lore-demo.xml file from Demo Data folder in full
+					package and&nbsp;submit it</strong>.</p>
+
+					<div class="c-alert-message">
+						<p>Please note that <strong>demo import won’t make your site immediately look like the demo</strong>!
+						There are additional steps required, like <a href="https://codex.wordpress.org/Creating_a_Static_Front_Page" target="_blank">choosing your front
+						page under Settings / Reading</a>, <a href="https://codex.wordpress.org/WordPress_Menu_User_Guide" target="_blank">menus under Appearance / Menus</a>
+						and <a href="https://codex.wordpress.org/WordPress_Widgets" target="_blank">sidebars&nbsp;under Appearance /&nbsp;Widgets</a>.
+						There is a separate chapter about <a href="#how-to-front-page">setting up your front page</a>. Follow the rest of documentation please</p>
+					</div>
+
+					<div class="c-alert-message m-type-info">
+						<p>Demo XML&nbsp;<strong>does not contain some&nbsp;data which rely on 3rd party plugins</strong>, like for example file&nbsp;attachments and forum posts. bbPress dummy data can be <a target="_blank" href="https://bbpress.trac.wordpress.org/raw-attachment/ticket/2516/bbpress-unit-test-data.xml">downloaded&nbsp;separately</a></p>
+					</div>
+
+					<div class="c-alert-message">
+						<p><strong>Demo images are not part of the demo import</strong> (placeholder image will be imported instead). You can find a lot
+						of nice free images for your site&nbsp;at&nbsp;<a href="https://unsplash.com" target="_blank">unsplash.com</a></p>
+					</div>
+
+				</section>
+				<!-- DEMO DATA IMPORT : end -->
+
+				<!-- CONTENT EDITING : begin -->
+				<section id="content-editing">
+
+					<h2>Content Editing</h2>
+
+					<h3>Standard Blog Post</h3>
+
+					<p>Before you start adding your blog (news) posts, go to Settings / Reading and set your Posts page.</p>
+					<p><img src="content/configuration-10.jpg" alt=""></p>
+					<ol>
+						<li>Select A static page</li>
+						<li>Choose your Front page</li>
+						<li>Choose your Posts page</li>
+					</ol>
+
+					<p>Since the blog posts are a core WordPress feature, you can read more about them&nbsp;in <a href="https://codex.wordpress.org/Writing_Posts" target="_blank">WordPress Codex</a>.</p>
+
+					<div class="c-alert-message">
+						<p>Theme-specific settings for post pages can be found under Appearance / Customize / Standard Posts (blog)</p>
+					</div>
+
+					<h3>Knowledge Base</h3>
+
+					<p>Knowledge Base is a bread and butter of this theme. Working with Knowledge base articles is <strong>very similar to working with regular posts</strong>. Each article can be assigned to a category and can include several tags.</p>
+					<p>You can manage your Knowledge Base articles under <em>Knowledge Base</em> section of admin.
+					To <strong>set category icon</strong>, use&nbsp;<em>Category Icon</em> field when creating or editing a category.
+					Read <a href="#how-to-icons">Icons chapter</a> to learn more about using icons.</p>
+					<p>By default,&nbsp;your Knowledge Base page is accessible on&nbsp;<em><strong>yoursite.com/knowledge-base</strong></em>
+					URL (make sure to set your Settings / Permalinks to <em>Post name</em>). You can change the knowledge-base slug of the URL
+					under Appearance / Customize / Knowledge Base. Don’t forget to resave Settings / Permalinks after&nbsp;you change slugs.</p>
+					<p>You can use [lore_kb_articles] shortcode to insert Knowledge Base articles&nbsp;list to any page.
+					There are also bunch of <strong>Knowledge Base specific widgets</strong> (Lore Knowledge Base Articles and Lore Knowledge Base Categories)
+					you can assign to any sidebar under Appearance / Widgets.</p>
+
+					<div class="c-alert-message">
+						<p>Make sure to review all options under <strong>Appearance / Customize / Knowledge Base</strong>
+						(and all options under Appearance / Customize in general), to familiarise yourself with the theme.</p>
+					</div>
+
+					<h3>FAQ</h3>
+
+					<p>Same as for&nbsp;Knowledge Base articles, working with FAQ posts is <strong>very similar to working with regular posts</strong>. You can put&nbsp;them to categories and assign them tags.</p>
+					<p>FAQ posts can be managed under <em>FAQ</em> section of admin.</p>
+					<p>By default,&nbsp;your FAQ archive&nbsp;page is accessible on&nbsp;<em><strong>yoursite.com/faq</strong>&nbsp;</em>URL (make sure to set your Settings / Permalinks to&nbsp;<em>Post name</em>). You can change the faq&nbsp;slug of the URL under Appearance / Customize / FAQ. Don’t forget to resave Settings / Permalinks after&nbsp;you change slugs.</p>
+					<p>You can use [lore_faq] shortcode to insert FAQ list to any page. There are also bunch of&nbsp;<strong>FAQ&nbsp;specific widgets</strong>&nbsp;(Lore
+					FAQ Posts&nbsp;and Lore FAQ Categories) you can assign to any sidebar under Appearance / Widgets.</p>
+
+					<div class="c-alert-message">
+						<p>Make sure to review all options under&nbsp;<strong>Appearance / Customize / FAQ</strong>&nbsp;(and all options under Appearance / Customize in general), to familiarise yourself with the theme.</p>
+					</div>
+
+				</section>
+				<!-- CONTENT EDITING : end -->
+
+				<!-- CUSTOMIZATION : begin -->
+				<section id="customization">
+
+					<h2>Customization</h2>
+
+					<h3 id="customization-customizer">Customizer</h3>
+
+					<p>This theme fully supports default WordPress Customizer (with help from&nbsp;Kirki plugin). You can <strong>access it via Appearance / Customize</strong>, where you can edit almost every aspect of the theme like&nbsp;menus, sidebars and widgets, header logo and much, much more.</p>
+
+					<p><img src="content/customization-10.jpg" alt=""></p>
+
+					<div class="c-alert-message">
+						<p>When you are trying to edit widgets via Customizer, <strong>only sidebars visible on your current page are available</strong>. Go to Appearance / Widgets to manage all sidebars in one place</p>
+					</div>
+
+					<h3 id="customization-sidebars-and-widgets">Sidebars &amp; Widgets</h3>
+
+					<p>Sidebars and widgets can be managed under Appearance / Widgets. Lore comes with bunch of custom widgets (their name is prefixed with “Lore”) and several sidebars. Please read the description of each sidebar to learn more about it.</p>
+
+					<h4>Custom Sidebars</h4>
+					<p>Lore offers several custom sidebars. You can change their number under Appearance / Customize / Misc Settings with&nbsp;Number of Custom Sidebars option.</p>
+					<p>Custom sidebars can be assigned to regular pages with <em>Sidebar on the Left</em> or <em>Sidebar on the Right</em> page templates.</p>
+					<p><img src="content/customization-20.jpg" alt=""></p>
+					<ol>
+						<li>Choose Sidebar on the Left or Sidebar on the Right template</li>
+						<li>Choose which sidebar should be used</li>
+					</ol>
+
+					<h3 id="customization-color-scheme">Color Scheme</h3>
+
+					<p>There are multiple ways how to change colors of this theme. Color schemes can be managed under Appearance / Customize / Color Scheme.</p>
+
+					<p><img src="content/customization-30.jpg" alt=""></p>
+
+					<h4>Predefined Color Scheme</h4>
+					<p>Choose one of predefined color schemes.</p>
+					<h4>Pick Colors</h4>
+					<p>Here you can pick link and accent colors and the color scheme will be generated automatically based on those two colors.</p>
+					<h4>Paste Generated CSS</h4>
+					<ul>
+						<li>Open <a href="http://wpdemos.lsvr.sk/lore/wp-content/themes/lore/library/css/skin/green.scss" target="_blank">default color scheme&nbsp;.scss file</a>.&nbsp;It should open directly in your browser, but&nbsp;some browsers may download it on your disk instead.</li>
+						<li>Copy all the code from that link to any text editor. If your browser downloaded your file, open that file in the text editor.&nbsp;You can use for example&nbsp;<a href="https://notepad-plus-plus.org" target="_blank">Notepad++</a> for Windows or <a href="http://brackets.io" target="_blank">Brackets</a> for Mac.</li>
+						<li>Make your changes. Basically you just need to change color variables at the top of the file. Most prominent is the $accent variable on line 27. By default, it looks like this:
+							<pre>$accent: #74aa7b; // main&nbsp;accent color</pre>
+							<p>There are many online tools where you can generate a hex code for your color, for example <a href="http://www.colorpicker.com" target="_blank">colorpicker.com</a>. &nbsp;Just change #74aa7b to hex code of your custom color (don’t forget that it has to start with # sign). Feel free to change values of other color variables in the file as well.</p></li>
+						<li>Copy your changed code and paste it to the left column on <a href="http://www.sassmeister.com" target="_blank">sassmeister.com</a> (SCSS). &nbsp;Please note that <strong>any typo in your&nbsp;syntax may lead into an error</strong> when generating your CSS code. So double check code in your file when&nbsp;there is any issue converting your SASS into CSS.</li>
+						<li>Copy generated code from right column (CSS)</li>
+						<li>Paste this generated code under Appearance / Customize into&nbsp;<em>Generated CSS</em> field (<em>Color Scheme Source</em> has to be set to <em>Paste Generated CSS</em> for this field to be visible).</li>
+					</ul>
+
+					<h4>Load From Child Theme</h4>
+					<p>Follow the steps as described above (in Paste Generated CSS), but <strong>there is a change in the last step</strong>. Instead of pasting your code in Customizer, paste it into child theme style.css. You can access this file either via FTP, or directly in admin under Appearance / Editor.</p>
+
+				</section>
+				<!-- CUSTOMIZATION : end -->
+
+				<!-- HOW TO : begin -->
+				<section id="how-to">
+
+					<h2>How To</h2>
+
+					<h3 id="how-to-front-page">Front Page</h3>
+
+					<p>There are multiple&nbsp;ways how to create a front page. If you want to&nbsp;build your custom one, without any attachments to the demo front page, then just create a regular page, fill it with the content and set it under Settings / Reading as your <em>Front page</em>. Don’t forget you can use <a href="#how-to-shortcode-generator/">Shortcode Generator</a> if you want to use theme’s built-in shortcodes.</p>
+
+					<p>But what if you want to use the same or similar front page as you can see in the demo?&nbsp;Let’s follow next steps to learn how to do it.</p>
+
+					<h4>Create a Regular Page</h4>
+					<p><strong>If you’ve imported the demo content you can skip this step</strong> as you already have this page (it’s called <em>Knowledge Base. Elegant. Lightweight. WordPress Based.</em>).</p>
+					<p>For those who are building their site from the scratch, go to Pages and create a new page with page&nbsp;template set to <em>Default Front Page.</em></p>
+					<p><img src="content/how-to-30.jpg" alt=""></p>
+					<ol>
+						<li>Create a new page</li>
+						<li>Insert a title which will be displayed at the top of the page</li>
+						<li>Content will be displayed under pre-defined layout of Default Front Page template (we will get to that in a moment)</li>
+						<li>Set page tempalte to Default Front Page</li>
+						<li>You can override global header background image with page’s Featured image</li>
+						<li>Save the page</li>
+					</ol>
+
+					<h4>Set Your Page as a Front Page</h4>
+					<p>Go to Settings / Reading and set the page from previous step as <em>Front page</em>.</p>
+					<p><img src="content/configuration-10.jpg" alt=""></p>
+					<ol>
+						<li>Select A&nbsp;static page</li>
+						<li>Choose your Front page</li>
+						<li>Choose your Posts page</li>
+					</ol>
+					<h4>Configure Your Front Page</h4>
+					<p>You can configure your front page under <strong>Appearance / Customize / Default Front Page Settings</strong> (those settings will work only if your front page uses Default Front Page template as described in one of previous steps). All options there should be self-explanatory via their description.</p>
+
+					<h3 id="how-to-theme-translation">Theme Translation</h3>
+
+					<p>The easiest way to translate the theme is to use <a href="https://wordpress.org/plugins/loco-translate/" target="_blank">Loco Translate</a> plugin.
+					Remember that <strong>you have to translate both Lore theme and Lore Theme Toolkit plugin</strong>.</p>
+					<p>If you are using&nbsp;the child theme (which you definitely should!), Loco translate will give you an option to create your language file for both parent (Lore) and child (Lore Child) themes. Ignore the Lore theme and <strong>create it for Lore Child theme only</strong>, so you won’t lose your translations after you update the theme in the future.</p>
+					<p>If you want to run your site in multiple languages, you&nbsp;can use <a href="https://wpml.org" target="_blank">WPML plugin</a>&nbsp;for that (it is not free though).</p>
+					<p>There is also an&nbsp;old-fashioned way to create your translation via <a href="https://poedit.net" target="_blank">Poedit app</a>. You will find the source lore.pot file in theme’s <em>languages</em> folder.</p>
+
+					<h3 id="how-to-updating-the-theme">Updating the Theme</h3>
+
+					<p>To update the theme, simply download it again from your downloads on ThemeForest (download just <em>Installable WordPress file only</em>). Latest version will be downloaded. Then deactivate and remove your current version&nbsp;of parent theme (you may need to activate another theme to be able to see an option for deleting your current theme) and install the downloaded version. You won’t lose your changes you made in admin.</p>
+					<p>Alternatively, you can update the theme by overwriting the <em>Lore</em>&nbsp;folder&nbsp;in wp-content/themes via FTP.</p>
+					<p>You should update the parent theme (Lore) only. <strong>There is no need for&nbsp;updating the child theme</strong> (Lore Child).</p>
+
+					<h3 id="how-to-icons">Icons</h3>
+
+					<p>This theme comes with&nbsp;custom icon font family which contains&nbsp;icons handpicked from several icon libraries (FontAwesome, Google Material Icons, Nova icons). Icon family was created via&nbsp;<a href="https://icomoon.io" target="_blank">IcoMoon</a> app.</p>
+					<p><a href="fontawesome/index.html" target="_blank">List of bundled<strong> FontAwesome Icons</strong></a></p>
+					<p><a href="novaicons/index.html" target="_blank">List of bundled<strong> Nova Icons</strong> (Loreicons)</a></p>
+					<p>There are multiple fields across the theme where you can insert&nbsp;the icon name. To do so prefix the icon’s name <a href="novaicons/index.html" target="_blank">from the list</a> with additional "loreico". For example "loreico loreico-heart" (without quotes).</p>
+
+					<h3 id="how-to-excerpt">Excerpt</h3>
+
+					<p>You can set an excerpt for regular posts, Knowledge Base articles and FAQ posts. This text will be used in listing pages,
+					widgets and shortcodes where applicable.</p>
+					<p>To define an excerpt, first make sure you have it enabled. To do so, <strong>click on Screen Options in upper right corner</strong> of post edit screen and check Excerpt.</p>
+
+					<p><img src="content/how-to-10.jpg" alt=""></p>
+					<ol>
+						<li>Click on Screen Options</li>
+						<li>Check Excerpt</li>
+					</ol>
+
+					<p>Then scroll down and you should see an Excerpt field.</p>
+					<p><img src="content/how-to-20.jpg" alt=""></p>
+					<ol>
+						<li>Put your excerpt here</li>
+					</ol>
+
+					<h3 id="how-to-contact-form">Contact Form</h3>
+
+					<p><a href="https://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a> is the recommended plugin for contact form functionality.
+						Please check out its <a href="http://contactform7.com" target="_blank">official site</a> if you need any help on how to use this plugin.</p>
+
+						<p>The following code is the <strong>form template used in the demo</strong>. Insert it under <em>Contact / &lt;your-contact-form&gt; / Form</em> if you want to make your own form look like the one in the demo.</p>
+<pre>[response]
+&lt;div class="row"&gt;
+&lt;div class="col-md-6"&gt;
+&lt;label&gt;[text your-subject placeholder "Subject"]&lt;/label&gt;
+&lt;label&gt;[text* your-name placeholder "Your Name (required)"]&lt;/label&gt;
+&lt;label&gt;[email* your-email placeholder "Your Email (required)"]&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="col-md-6"&gt;
+&lt;label&gt;[textarea your-message x7 placeholder "Your Message"]&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="text-align-center"&gt;[submit class:c-button "Send Message"]&lt;/div&gt;
+</pre>
+
+					<h3 id="how-to-forum-bbpress">Forum (bbPress)</h3>
+
+					<p>This theme supports <a href="https://wordpress.org/plugins/bbpress/" target="_blank">bbPress plugin</a>, which is the most popular
+					solution for a WordPress based forum. Support comes in a form&nbsp;of custom CSS styling for bbPress pages and small code
+					tweaks for&nbsp;seamless integration. Also, there is a <strong>pre-defined page template for bbPress Login/Registration</strong>.&nbsp;Just&nbsp;create a regular page and set its Template (under Page Attributes) to <em>bbPress Login / Register</em>.</p>
+					<p>bbPress has its own <a href="https://codex.bbpress.org" target="_blank">extensive documentation</a> which should get you started.</p>
+
+					<h3 id="how-to-shortcode-generator">Shortcode Generator</h3>
+
+					<p>Shortcodes are small pieces of code which can be used to include various elements into content of your site. This theme offers several custom shortcodes, which can be inserted very easily via Shortcode Generator.</p>
+					<p><img src="content/shortcodes-10.jpg" alt=""></p>
+					<ol>
+						<li>Click on Add Shortcode button</li>
+						<li>Choose shortcode from the list</li>
+						<li>Customize its parameters</li>
+						<li>You can copy the generated code to clipboard</li>
+						<li>Insert shortcode into content</li>
+					</ol>
+
+					<div class="c-alert-message">
+						<p>Only theme’s custom shortcodes are available in Shortcode Generator</p>
+					</div>
+
+				</section>
+				<!-- HOW TO : end -->
+
+				<hr>
+				<div class="c-alert-message">
+					<p>Don't forget that <a href="http://wpdemos.lsvr.sk/lore" target="_blank">theme demo</a> acts also as an online documentation for Lore theme.
+					It is a recommended way to learn about the theme features.</p>
+					<p><a href="http://wpdemos.lsvr.sk/lore/" target="_blank"><strong>OPEN THEME DEMO</strong></a></p>
+				</div>
+
+			</div>
+			<!-- CONTENT : end -->
+
+		</div>
+		<!-- CORE : end -->
+
+	</div>
+	<!-- WRAPPER : end -->
+
+    </body>
+</html>

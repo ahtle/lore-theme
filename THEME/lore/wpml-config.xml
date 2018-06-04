@@ -1,0 +1,50 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_lore">
+        	<key name="defaultfp_grid_title" />
+        	<key name="defaultfp_grid_btn_label" />
+        	<key name="defaultfp_grid_btn_link" />
+        	<key name="defaultfp_grid_cta_title" />
+        	<key name="defaultfp_grid_cta_text" />
+        	<key name="defaultfp_grid_cta_btn_label" />
+        	<key name="defaultfp_grid_cta_btn_link" />
+        	<key name="defaultfp_blog_title" />
+        	<key name="defaultfp_blog_btn_label" />
+        	<key name="header_search_placeholder" />
+        	<key name="header_search_suggestions" />
+			<key name="footer_text" />
+			<key name="kb_title" />
+			<key name="kb_article_contents_title" />
+			<key name="faq_title" />
+			<key name="page404_content" />
+        </key>
+        <key name="theme_mods_lore-child">
+        	<key name="defaultfp_grid_title" />
+        	<key name="defaultfp_grid_btn_label" />
+        	<key name="defaultfp_grid_btn_link" />
+        	<key name="defaultfp_grid_cta_title" />
+        	<key name="defaultfp_grid_cta_text" />
+        	<key name="defaultfp_grid_cta_btn_label" />
+        	<key name="defaultfp_grid_cta_btn_link" />
+        	<key name="defaultfp_blog_title" />
+        	<key name="defaultfp_blog_btn_label" />
+        	<key name="header_search_placeholder" />
+        	<key name="header_search_suggestions" />
+			<key name="footer_text" />
+			<key name="kb_title" />
+			<key name="kb_article_contents_title" />
+			<key name="faq_title" />
+			<key name="page404_content" />
+        </key>
+    </admin-texts>
+	<custom-types>
+		<custom-type translate="1">lsvr_lore_kb</custom-type>
+		<custom-type translate="1">lsvr_lore_faq</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">lsvr_lore_kb_cat</taxonomy>
+		<taxonomy translate="1">lsvr_lore_kb_tag</taxonomy>
+		<taxonomy translate="1">lsvr_lore_faq_cat</taxonomy>
+		<taxonomy translate="1">lsvr_lore_faq_tag</taxonomy>
+	</taxonomies>
+</wpml-config>
